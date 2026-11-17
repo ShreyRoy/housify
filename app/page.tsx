@@ -2,11 +2,13 @@ import { ArrowDown, ArrowRight, AudioLines, Check, Disc3, Layers3, SlidersHorizo
 import { SpotifyConnect } from "@/components/spotify-connect";
 import { SwipePreview } from "@/components/swipe-preview";
 import { Eyebrow } from "@/components/ui";
+import { AuthNotice } from "@/components/auth-notice";
 
 export default function Home() {
   return <main>
     <div className="ambient" aria-hidden="true"/>
     <header className="site-header container"><a href="#" className="brand" aria-label="Housify home"><AudioLines size={26}/><span>housify<span className="brand-dot">.</span></span></a><nav aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="#preview">The experience <ArrowUpRightIcon/></a></nav><span className="phase-badge"><span className="tiny-dot"/> IN THE MAKING</span></header>
+    <AuthNotice/>
     <section className="hero container">
       <div className="hero-copy"><Eyebrow><span className="tiny-dot"/> FOR THE LOVE OF THE FOUR-ON-THE-FLOOR</Eyebrow><h1>Your playlists.<br/>More <span className="house-word">house<svg viewBox="0 0 310 20" aria-hidden="true"><path d="M3 14Q140 0 303 9"/></svg></span>.</h1><p className="hero-description">The good stuff is already in your library.<br className="desktop-break"/> Find the house hiding in your Spotify playlists,<br className="desktop-break"/> and give it a place of its own.</p><SpotifyConnect/><div className="hero-footnote"><span><Check size={14}/> You’re always in control</span><span className="footnote-divider"/><span>No playlist changes without your say-so</span></div><a className="explore-link" href="#how-it-works"><span><ArrowDown size={15}/></span> A better kind of crate digging</a></div>
       <div className="hero-preview"><div className="preview-orbit" aria-hidden="true"/><SwipePreview/><div className="preview-caption"><span>LESS SEARCHING.</span><span>MORE FEELING.</span></div></div>
