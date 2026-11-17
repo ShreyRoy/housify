@@ -26,6 +26,9 @@ export function trackView(entry: SpotifyPlaylistItem | null, index: number): Tra
   const status = !item ? "unavailable" : !isTrack ? "non-track" : local ? "local" : item.is_playable === false || item.restrictions ? "unavailable" : "track";
   return {
     position: index + 1, title: item?.name || "Unavailable item",
+    spotifyTrackId: isTrack && item.id ? item.id : null,
+    artistNames: isTrack ? (item.artists || []).map(artist => artist.name || "").filter(Boolean) : [],
+    isrc: isTrack ? item.external_ids?.isrc || null : null,
     artists: isTrack ? item.artists?.map(artist => artist.name).filter(Boolean).join(", ") || "Unknown artist" : "Non-track item",
     album: isTrack ? item.album?.name || "" : "", image: isTrack ? imageUrl(item.album?.images?.[0]?.url) : null,
     duration: typeof item?.duration_ms === "number" && item.duration_ms >= 0 ? item.duration_ms : null,

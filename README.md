@@ -1,6 +1,8 @@
 # Housify
 
-A personal Spotify playlist browser and foundation for a future house music curator. Phase 2 adds PKCE authentication, persistent sessions, playlist browsing and ordered track lists. The Phase 1 landing page and fictional card demo remain intact. Classification, real swipe review, playback, and playlist writes are not implemented.
+**Phase 3:** Analyze Playlist now processes the selected playlist's actual tracks through live MusicBrainz metadata matching and the deterministic house classifier. Fictional fixtures remain only in `/analysis-lab` and tests. See [the live workflow guide](docs/classification.md) and [unresolved API policy considerations](docs/phase-3-policy.md). No swiping, audio analysis, playlist writes or new dependencies were added.
+
+A personal Spotify playlist browser and foundation for a future house music curator. Phase 2 adds PKCE authentication, persistent sessions, playlist browsing and ordered track lists. The Phase 1 landing page and fictional card demo remain intact. Live metadata classification is implemented; real swipe review, playback, and playlist writes are not.
 
 ## Run locally
 
@@ -10,6 +12,7 @@ Use Node.js 22.16 or newer (tests use Node's experimental TypeScript support). Y
 SPOTIFY_CLIENT_ID=your_spotify_client_id
 SPOTIFY_REDIRECT_URI=http://127.0.0.1:3000/api/auth/callback
 SESSION_SECRET=your_generated_32_byte_base64url_key
+MUSICBRAINZ_CONTACT=https://github.com/ShreyRoy/housify
 ```
 
 Setup generated `SESSION_SECRET` in the existing `.env.local` if it was missing. It is a private application encryption key, not a Spotify client secret. Keep it stable across restarts and never prefix it with `NEXT_PUBLIC_`. To generate one for another installation:
@@ -98,4 +101,4 @@ The production build uses Next.js’s Webpack option because Turbopack’s CSS w
 
 ## Future integration boundary
 
-House classification and real swipe review remain future work. No playlist writes are implemented. A future playlist-creation flow must include a final review and explicit confirmation.
+Real swipe review remains future work. No playlist writes are implemented. A future playlist-creation flow must include a final review and explicit confirmation.

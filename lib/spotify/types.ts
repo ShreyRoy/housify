@@ -14,6 +14,7 @@ export type SpotifyPlaylist = {
 export type SpotifyTrack = {
   type: string;
   id?: string | null;
+  external_ids?: { isrc?: string };
   name?: string;
   artists?: { name?: string }[];
   album?: { name?: string; images?: SpotifyImage[] };
@@ -30,7 +31,7 @@ export type SpotifyPlaylistItem = {
 };
 export type SpotifyPage<T> = { items: T[]; next: string | null; total: number; offset: number; limit: number };
 export type PlaylistView = { id: string; name: string; image: string | null; owner: string; count: number | null; accessible: boolean; url: string };
-export type TrackView = { position: number; title: string; artists: string; album: string; image: string | null; duration: number | null; status: "track" | "unavailable" | "local" | "non-track"; url: string | null };
+export type TrackView = { position: number; spotifyTrackId: string | null; artistNames: string[]; isrc: string | null; title: string; artists: string; album: string; image: string | null; duration: number | null; status: "track" | "unavailable" | "local" | "non-track"; url: string | null };
 export type LibraryData = { user: { name: string; url: string }; playlists: PlaylistView[] };
 export type PlaylistData = { playlist: PlaylistView; tracks: TrackView[] };
 export type ApiProblem = { message: string; retryAfter?: number };
