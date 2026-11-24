@@ -1,0 +1,13 @@
+{
+  "type": "SYNTHETIC ENGINEERING ONLY; NOT COVERAGE OR ACCURACY",
+  "node": "v22.16.0",
+  "recordings": 10000,
+  "lookups": 5000,
+  "sqliteBytes": 9404416,
+  "bytesPerRecording": 940.4416,
+  "importMs": 741.21175,
+  "warmMedianMs": 0.18787499999984902,
+  "warmP95Ms": 0.2573330000000169,
+  "projected100kBytesAtSameSyntheticShape": 94044160,
+  "limitations": "Warm single-process SQLite on this machine, deterministic synthetic names and sparse annotations; real data needs aliases, additional identifiers and richer provenance. Projections are not measured 100k-scale performance."
+}

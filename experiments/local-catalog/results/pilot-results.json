@@ -1,0 +1,815 @@
+{
+  "generatedAt": "2026-11-24T18:52:48.377Z",
+  "design": "18 purposively selected public recordings; incomplete independent gold review; NOT a random 100-track benchmark or full-dump coverage evaluation",
+  "discovery": {
+    "artistMatch": {
+      "available": 18,
+      "observed": 18,
+      "unavailable": 0
+    },
+    "nameVersionMatch": {
+      "available": 3,
+      "observed": 18,
+      "unavailable": 15
+    },
+    "isrcAvailable": {
+      "available": 3,
+      "observed": 3,
+      "unavailable": 0
+    },
+    "recordingGenres": {
+      "available": 0,
+      "observed": 3,
+      "unavailable": 3
+    },
+    "recordingTags": {
+      "available": 1,
+      "observed": 3,
+      "unavailable": 2
+    },
+    "releaseGenres": {
+      "available": 0,
+      "observed": 3,
+      "unavailable": 3
+    },
+    "releaseTags": {
+      "available": 0,
+      "observed": 3,
+      "unavailable": 3
+    },
+    "labelAvailable": {
+      "available": 3,
+      "observed": 3,
+      "unavailable": 0
+    },
+    "byStratum": {
+      "mainstream": {
+        "artistMatch": {
+          "available": 3,
+          "observed": 3,
+          "unavailable": 0
+        },
+        "nameVersionMatch": {
+          "available": 0,
+          "observed": 3,
+          "unavailable": 3
+        },
+        "isrcAvailable": {
+          "available": 0,
+          "observed": 0,
+          "unavailable": 0
+        },
+        "recordingGenres": {
+          "available": 0,
+          "observed": 0,
+          "unavailable": 0
+        },
+        "recordingTags": {
+          "available": 0,
+          "observed": 0,
+          "unavailable": 0
+        },
+        "releaseGenres": {
+          "available": 0,
+          "observed": 0,
+          "unavailable": 0
+        },
+        "releaseTags": {
+          "available": 0,
+          "observed": 0,
+          "unavailable": 0
+        },
+        "labelAvailable": {
+          "available": 0,
+          "observed": 0,
+          "unavailable": 0
+        }
+      },
+      "underground": {
+        "artistMatch": {
+          "available": 3,
+          "observed": 3,
+          "unavailable": 0
+        },
+        "nameVersionMatch": {
+          "available": 0,
+          "observed": 3,
+          "unavailable": 3
+        },
+        "isrcAvailable": {
+          "available": 0,
+          "observed": 0,
+          "unavailable": 0
+        },
+        "recordingGenres": {
+          "available": 0,
+          "observed": 0,
+          "unavailable": 0
+        },
+        "recordingTags": {
+          "available": 0,
+          "observed": 0,
+          "unavailable": 0
+        },
+        "releaseGenres": {
+          "available": 0,
+          "observed": 0,
+          "unavailable": 0
+        },
+        "releaseTags": {
+          "available": 0,
+          "observed": 0,
+          "unavailable": 0
+        },
+        "labelAvailable": {
+          "available": 0,
+          "observed": 0,
+          "unavailable": 0
+        }
+      },
+      "recent": {
+        "artistMatch": {
+          "available": 3,
+          "observed": 3,
+          "unavailable": 0
+        },
+        "nameVersionMatch": {
+          "available": 2,
+          "observed": 3,
+          "unavailable": 1
+        },
+        "isrcAvailable": {
+          "available": 2,
+          "observed": 2,
+          "unavailable": 0
+        },
+        "recordingGenres": {
+          "available": 0,
+          "observed": 2,
+          "unavailable": 2
+        },
+        "recordingTags": {
+          "available": 0,
+          "observed": 2,
+          "unavailable": 2
+        },
+        "releaseGenres": {
+          "available": 0,
+          "observed": 2,
+          "unavailable": 2
+        },
+        "releaseTags": {
+          "available": 0,
+          "observed": 2,
+          "unavailable": 2
+        },
+        "labelAvailable": {
+          "available": 2,
+          "observed": 2,
+          "unavailable": 0
+        }
+      },
+      "adjacent": {
+        "artistMatch": {
+          "available": 6,
+          "observed": 6,
+          "unavailable": 0
+        },
+        "nameVersionMatch": {
+          "available": 1,
+          "observed": 6,
+          "unavailable": 5
+        },
+        "isrcAvailable": {
+          "available": 1,
+          "observed": 1,
+          "unavailable": 0
+        },
+        "recordingGenres": {
+          "available": 0,
+          "observed": 1,
+          "unavailable": 1
+        },
+        "recordingTags": {
+          "available": 1,
+          "observed": 1,
+          "unavailable": 0
+        },
+        "releaseGenres": {
+          "available": 0,
+          "observed": 1,
+          "unavailable": 1
+        },
+        "releaseTags": {
+          "available": 0,
+          "observed": 1,
+          "unavailable": 1
+        },
+        "labelAvailable": {
+          "available": 1,
+          "observed": 1,
+          "unavailable": 0
+        }
+      },
+      "unrelated": {
+        "artistMatch": {
+          "available": 3,
+          "observed": 3,
+          "unavailable": 0
+        },
+        "nameVersionMatch": {
+          "available": 0,
+          "observed": 3,
+          "unavailable": 3
+        },
+        "isrcAvailable": {
+          "available": 0,
+          "observed": 0,
+          "unavailable": 0
+        },
+        "recordingGenres": {
+          "available": 0,
+          "observed": 0,
+          "unavailable": 0
+        },
+        "recordingTags": {
+          "available": 0,
+          "observed": 0,
+          "unavailable": 0
+        },
+        "releaseGenres": {
+          "available": 0,
+          "observed": 0,
+          "unavailable": 0
+        },
+        "releaseTags": {
+          "available": 0,
+          "observed": 0,
+          "unavailable": 0
+        },
+        "labelAvailable": {
+          "available": 0,
+          "observed": 0,
+          "unavailable": 0
+        }
+      }
+    },
+    "exactRecordingMatchRate": null,
+    "exactRecordingMatchReason": "No independently verified recording IDs/durations for exact-identity gold. Name/version candidate matches are a proxy only.",
+    "isrcMatchRate": null,
+    "isrcMatchReason": "ISRC availability is observed on matched records; no gold input ISRCs were available to measure ISRC matching accuracy.",
+    "requests": 41,
+    "responseBytes": 533849
+  },
+  "evaluation": {
+    "strictGoldRows": 6,
+    "totalRows": 18,
+    "falsePositives": [],
+    "falseNegatives": [],
+    "goldHouseAbstentions": [
+      "mainstream-1",
+      "mainstream-2",
+      "recent-3"
+    ],
+    "definiteHouseRecallIncludingAbstentions": 0,
+    "definiteHousePrecision": null,
+    "limitation": "No errors among abstentions is not high accuracy. Provisional/release-level/unadjudicated gold excluded. Local catalog was selected using these queries: not a held-out retrieval test."
+  },
+  "local": {
+    "sqliteBytes": 143360,
+    "recordings": 3,
+    "artists": 24,
+    "labels": 3,
+    "releases": 3,
+    "importMs": 2.1614999999999895,
+    "warmLookupRuns": 360,
+    "warmMedianMs": 0.03499999999999659,
+    "warmP95Ms": 0.13958299999998758,
+    "caveat": "Tiny tailored in-memory pilot; warm timings do not predict cold disk or full-catalog latency."
+  },
+  "rows": [
+    {
+      "caseId": "mainstream-1",
+      "stratum": "mainstream",
+      "title": "One More Time",
+      "artist": "Daft Punk",
+      "gold": {
+        "family": "house",
+        "genre": "french house",
+        "url": "https://edm.com/features/on-this-day-daft-punk-one-more-time/",
+        "scope": "recording",
+        "note": "Independent editorial characterization of the original song, not a remix."
+      },
+      "result": {
+        "classification": "UNKNOWN",
+        "confidence": 0,
+        "houseScore": 50,
+        "matchConfidence": 0,
+        "matchedRecording": null,
+        "metadataSources": [],
+        "evidence": [],
+        "explanation": [
+          "No corroborated local recording match. This is not evidence against house.",
+          "No sufficient independent evidence. Missing metadata is never an automatic exclusion.",
+          "Heuristic scores only; no model, audio, runtime HTTP request or Spotify data is used."
+        ]
+      }
+    },
+    {
+      "caseId": "mainstream-2",
+      "stratum": "mainstream",
+      "title": "Music Sounds Better With You",
+      "artist": "Stardust",
+      "gold": {
+        "family": "house",
+        "genre": "french house",
+        "url": "https://pitchfork.com/news/stardust-to-re-release-music-sounds-better-with-you/",
+        "scope": "recording",
+        "note": "Editorial explicitly places this single in French house."
+      },
+      "result": {
+        "classification": "UNKNOWN",
+        "confidence": 0,
+        "houseScore": 50,
+        "matchConfidence": 0,
+        "matchedRecording": null,
+        "metadataSources": [],
+        "evidence": [],
+        "explanation": [
+          "No corroborated local recording match. This is not evidence against house.",
+          "No sufficient independent evidence. Missing metadata is never an automatic exclusion.",
+          "Heuristic scores only; no model, audio, runtime HTTP request or Spotify data is used."
+        ]
+      }
+    },
+    {
+      "caseId": "mainstream-3",
+      "stratum": "mainstream",
+      "title": "Marea (We've Lost Dancing)",
+      "artist": "Fred again..",
+      "gold": {
+        "family": "house",
+        "genre": "deep house",
+        "url": "https://en.wikipedia.org/wiki/Marea_(We%27ve_Lost_Dancing)",
+        "scope": "provisional",
+        "note": "Independent reference candidate; needs a second track-specific source before strict evaluation."
+      },
+      "result": {
+        "classification": "UNKNOWN",
+        "confidence": 0,
+        "houseScore": 50,
+        "matchConfidence": 0,
+        "matchedRecording": null,
+        "metadataSources": [],
+        "evidence": [],
+        "explanation": [
+          "No corroborated local recording match. This is not evidence against house.",
+          "No sufficient independent evidence. Missing metadata is never an automatic exclusion.",
+          "Heuristic scores only; no model, audio, runtime HTTP request or Spotify data is used."
+        ]
+      }
+    },
+    {
+      "caseId": "underground-1",
+      "stratum": "underground",
+      "title": "Feeling Emotions (KETTAMA Ard House Mix)",
+      "artist": "KETTAMA",
+      "gold": null,
+      "result": {
+        "classification": "UNKNOWN",
+        "confidence": 0,
+        "houseScore": 50,
+        "matchConfidence": 0,
+        "matchedRecording": null,
+        "metadataSources": [],
+        "evidence": [],
+        "explanation": [
+          "No corroborated local recording match. This is not evidence against house.",
+          "No sufficient independent evidence. Missing metadata is never an automatic exclusion.",
+          "Heuristic scores only; no model, audio, runtime HTTP request or Spotify data is used."
+        ]
+      }
+    },
+    {
+      "caseId": "underground-2",
+      "stratum": "underground",
+      "title": "Don't Stop (Extended Mix)",
+      "artist": "Prospa",
+      "gold": {
+        "family": "house",
+        "genre": "tech house",
+        "url": "https://www.electrobuzz.net/2025/04/prospa-dont-stop-extended-mix-on-circoloco-records/726456/",
+        "scope": "provisional",
+        "note": "Independent track listing; editorial provenance needs review before strict scoring. Artist Bandcamp independently establishes the version/date."
+      },
+      "result": {
+        "classification": "UNKNOWN",
+        "confidence": 0,
+        "houseScore": 50,
+        "matchConfidence": 0,
+        "matchedRecording": null,
+        "metadataSources": [],
+        "evidence": [],
+        "explanation": [
+          "No corroborated local recording match. This is not evidence against house.",
+          "No sufficient independent evidence. Missing metadata is never an automatic exclusion.",
+          "Heuristic scores only; no model, audio, runtime HTTP request or Spotify data is used."
+        ]
+      }
+    },
+    {
+      "caseId": "underground-3",
+      "stratum": "underground",
+      "title": "Back It Up",
+      "artist": "Josh Baker",
+      "gold": null,
+      "result": {
+        "classification": "UNKNOWN",
+        "confidence": 0,
+        "houseScore": 50,
+        "matchConfidence": 0,
+        "matchedRecording": null,
+        "metadataSources": [],
+        "evidence": [],
+        "explanation": [
+          "No corroborated local recording match. This is not evidence against house.",
+          "No sufficient independent evidence. Missing metadata is never an automatic exclusion.",
+          "Heuristic scores only; no model, audio, runtime HTTP request or Spotify data is used."
+        ]
+      }
+    },
+    {
+      "caseId": "recent-1",
+      "stratum": "recent",
+      "title": "Comes and Goes",
+      "artist": "KETTAMA",
+      "gold": {
+        "family": "house",
+        "genre": "house",
+        "url": "https://en.wikipedia.org/wiki/Comes_and_Goes_(song)",
+        "scope": "provisional",
+        "note": "Label-distributed official video independently verifies date/identity; genre still needs second review."
+      },
+      "result": {
+        "classification": "UNKNOWN",
+        "confidence": 0,
+        "houseScore": 50,
+        "matchConfidence": 0,
+        "matchedRecording": null,
+        "metadataSources": [],
+        "evidence": [],
+        "explanation": [
+          "No corroborated local recording match. This is not evidence against house.",
+          "No sufficient independent evidence. Missing metadata is never an automatic exclusion.",
+          "Heuristic scores only; no model, audio, runtime HTTP request or Spotify data is used."
+        ]
+      }
+    },
+    {
+      "caseId": "recent-2",
+      "stratum": "recent",
+      "title": "Shinjuku",
+      "artist": "Franky Rizardo",
+      "gold": {
+        "family": "house",
+        "genre": "house",
+        "url": "https://wordandsound.net/release/167823-MS552-Franky-Rizardo-Shinjuku",
+        "scope": "release",
+        "note": "Distributor labels the July vinyl release House; not a recording-specific annotation of every version."
+      },
+      "result": {
+        "classification": "UNKNOWN",
+        "confidence": 0,
+        "houseScore": 50,
+        "matchConfidence": 95,
+        "matchedRecording": {
+          "id": "60489765-e3e2-4176-9985-c7b651230784",
+          "title": "Shinjuku",
+          "artist": "Franky Rizardo",
+          "method": "normalized-title-artist-version"
+        },
+        "metadataSources": [
+          {
+            "id": "mb-core",
+            "name": "MusicBrainz community core metadata",
+            "url": "https://musicbrainz.org/doc/About/Data_License",
+            "license": "CC0-1.0",
+            "version": "API snapshot 2026-11-24T18:45:53.404Z",
+            "obtainedAt": "2026-11-24T18:45:53.404Z"
+          }
+        ],
+        "evidence": [],
+        "explanation": [
+          "Matched by normalized-title-artist-version; title, primary artist, version and any supplied duration agree.",
+          "No sufficient independent evidence. Missing metadata is never an automatic exclusion.",
+          "Heuristic scores only; no model, audio, runtime HTTP request or Spotify data is used."
+        ]
+      }
+    },
+    {
+      "caseId": "recent-3",
+      "stratum": "recent",
+      "title": "My Place",
+      "artist": "Josh Baker",
+      "gold": {
+        "family": "house",
+        "genre": "house",
+        "url": "https://ihouseu.com/josh-baker-and-poppy-baskcomb-link-up-on-euphoric-summer-anthem-my-place/",
+        "scope": "recording",
+        "note": "Independent editorial describes the specific collaboration with Poppy Baskcomb as a house record."
+      },
+      "result": {
+        "classification": "UNKNOWN",
+        "confidence": 0,
+        "houseScore": 50,
+        "matchConfidence": 95,
+        "matchedRecording": {
+          "id": "50d0659a-896b-41f9-832d-4fd7d73339ba",
+          "title": "My Place",
+          "artist": "Josh Baker",
+          "method": "normalized-title-artist-version"
+        },
+        "metadataSources": [
+          {
+            "id": "mb-core",
+            "name": "MusicBrainz community core metadata",
+            "url": "https://musicbrainz.org/doc/About/Data_License",
+            "license": "CC0-1.0",
+            "version": "API snapshot 2026-11-24T18:45:53.404Z",
+            "obtainedAt": "2026-11-24T18:45:53.404Z"
+          }
+        ],
+        "evidence": [],
+        "explanation": [
+          "Matched by normalized-title-artist-version; title, primary artist, version and any supplied duration agree.",
+          "No sufficient independent evidence. Missing metadata is never an automatic exclusion.",
+          "Heuristic scores only; no model, audio, runtime HTTP request or Spotify data is used."
+        ]
+      }
+    },
+    {
+      "caseId": "adjacent-1",
+      "stratum": "adjacent",
+      "title": "leavemealone",
+      "artist": "Fred again..",
+      "gold": {
+        "family": "adjacent",
+        "genre": "drum and bass",
+        "url": "https://en.wikipedia.org/wiki/Leavemealone",
+        "scope": "provisional",
+        "note": "Baby Keem collaboration contrasts with Marea; reference needs independent second review."
+      },
+      "result": {
+        "classification": "POSSIBLY_HOUSE",
+        "confidence": 86,
+        "houseScore": 50,
+        "matchConfidence": 95,
+        "matchedRecording": {
+          "id": "7002d67a-83a8-49c2-abcd-539a3168d954",
+          "title": "leavemealone",
+          "artist": "Fred again..",
+          "method": "normalized-title-artist-version"
+        },
+        "metadataSources": [
+          {
+            "id": "mb-core",
+            "name": "MusicBrainz community core metadata",
+            "url": "https://musicbrainz.org/doc/About/Data_License",
+            "license": "CC0-1.0",
+            "version": "API snapshot 2026-11-24T18:45:53.404Z",
+            "obtainedAt": "2026-11-24T18:45:53.404Z"
+          },
+          {
+            "id": "mb-tags",
+            "name": "MusicBrainz community genre/tag associations",
+            "url": "https://musicbrainz.org/doc/About/Data_License",
+            "license": "CC-BY-NC-SA-3.0",
+            "version": "API snapshot 2026-11-24T18:45:53.404Z",
+            "obtainedAt": "2026-11-24T18:45:53.404Z"
+          }
+        ],
+        "evidence": [
+          {
+            "level": "recording",
+            "family": "adjacent",
+            "tag": "drum n bass",
+            "strength": 0.855,
+            "source": "mb-tags",
+            "provenance": [
+              "mb-tags"
+            ]
+          }
+        ],
+        "explanation": [
+          "Matched by normalized-title-artist-version; title, primary artist, version and any supplied duration agree.",
+          "Release styles and artist/remixer/label distributions are context, not proof of this recording's genre.",
+          "Heuristic scores only; no model, audio, runtime HTTP request or Spotify data is used."
+        ]
+      }
+    },
+    {
+      "caseId": "adjacent-2",
+      "stratum": "adjacent",
+      "title": "Doppler",
+      "artist": "Charlotte de Witte",
+      "gold": null,
+      "result": {
+        "classification": "UNKNOWN",
+        "confidence": 0,
+        "houseScore": 50,
+        "matchConfidence": 0,
+        "matchedRecording": null,
+        "metadataSources": [],
+        "evidence": [],
+        "explanation": [
+          "No corroborated local recording match. This is not evidence against house.",
+          "No sufficient independent evidence. Missing metadata is never an automatic exclusion.",
+          "Heuristic scores only; no model, audio, runtime HTTP request or Spotify data is used."
+        ]
+      }
+    },
+    {
+      "caseId": "adjacent-3",
+      "stratum": "adjacent",
+      "title": "Sincere",
+      "artist": "MJ Cole",
+      "gold": {
+        "family": "adjacent",
+        "genre": "uk garage",
+        "url": "https://djmag.com/watch/mj-cole-sincere-making-of-uk-garage-classic",
+        "scope": "recording",
+        "note": "Producer interview identifies this particular original recording as UK garage."
+      },
+      "result": {
+        "classification": "UNKNOWN",
+        "confidence": 0,
+        "houseScore": 50,
+        "matchConfidence": 0,
+        "matchedRecording": null,
+        "metadataSources": [],
+        "evidence": [],
+        "explanation": [
+          "No corroborated local recording match. This is not evidence against house.",
+          "No sufficient independent evidence. Missing metadata is never an automatic exclusion.",
+          "Heuristic scores only; no model, audio, runtime HTTP request or Spotify data is used."
+        ]
+      }
+    },
+    {
+      "caseId": "adjacent-4",
+      "stratum": "adjacent",
+      "title": "We Control The Sunlight (Original Mix)",
+      "artist": "Aly & Fila",
+      "gold": {
+        "family": "adjacent",
+        "genre": "trance",
+        "url": "https://music.apple.com/us/song/478836288",
+        "scope": "provisional",
+        "note": "Jwaydan collaboration; compilation title supports candidate selection, not final gold."
+      },
+      "result": {
+        "classification": "UNKNOWN",
+        "confidence": 0,
+        "houseScore": 50,
+        "matchConfidence": 0,
+        "matchedRecording": null,
+        "metadataSources": [],
+        "evidence": [],
+        "explanation": [
+          "No corroborated local recording match. This is not evidence against house.",
+          "No sufficient independent evidence. Missing metadata is never an automatic exclusion.",
+          "Heuristic scores only; no model, audio, runtime HTTP request or Spotify data is used."
+        ]
+      }
+    },
+    {
+      "caseId": "adjacent-5",
+      "stratum": "adjacent",
+      "title": "Glue",
+      "artist": "Bicep",
+      "gold": {
+        "family": "adjacent",
+        "genre": "breakbeat",
+        "url": "https://ra.co/reviews/28133",
+        "scope": "recording",
+        "note": "Independent single review explicitly describes breakbeat; artist's album page is multi-genre."
+      },
+      "result": {
+        "classification": "UNKNOWN",
+        "confidence": 0,
+        "houseScore": 50,
+        "matchConfidence": 0,
+        "matchedRecording": null,
+        "metadataSources": [],
+        "evidence": [],
+        "explanation": [
+          "No corroborated local recording match. This is not evidence against house.",
+          "No sufficient independent evidence. Missing metadata is never an automatic exclusion.",
+          "Heuristic scores only; no model, audio, runtime HTTP request or Spotify data is used."
+        ]
+      }
+    },
+    {
+      "caseId": "adjacent-6",
+      "stratum": "adjacent",
+      "title": "Opal (Four Tet Remix)",
+      "artist": "Bicep",
+      "gold": null,
+      "result": {
+        "classification": "UNKNOWN",
+        "confidence": 0,
+        "houseScore": 50,
+        "matchConfidence": 0,
+        "matchedRecording": null,
+        "metadataSources": [],
+        "evidence": [],
+        "explanation": [
+          "No corroborated local recording match. This is not evidence against house.",
+          "No sufficient independent evidence. Missing metadata is never an automatic exclusion.",
+          "Heuristic scores only; no model, audio, runtime HTTP request or Spotify data is used."
+        ]
+      }
+    },
+    {
+      "caseId": "unrelated-1",
+      "stratum": "unrelated",
+      "title": "Jolene",
+      "artist": "Dolly Parton",
+      "gold": {
+        "family": "other",
+        "genre": "country",
+        "url": "https://www.dollyparton.com/album/jolene",
+        "scope": "recording",
+        "note": "Artist's official page documents the title track's country vocal nomination."
+      },
+      "result": {
+        "classification": "UNKNOWN",
+        "confidence": 0,
+        "houseScore": 50,
+        "matchConfidence": 0,
+        "matchedRecording": null,
+        "metadataSources": [],
+        "evidence": [],
+        "explanation": [
+          "No corroborated local recording match. This is not evidence against house.",
+          "No sufficient independent evidence. Missing metadata is never an automatic exclusion.",
+          "Heuristic scores only; no model, audio, runtime HTTP request or Spotify data is used."
+        ]
+      }
+    },
+    {
+      "caseId": "unrelated-2",
+      "stratum": "unrelated",
+      "title": "Smells Like Teen Spirit",
+      "artist": "Nirvana",
+      "gold": {
+        "family": "other",
+        "genre": "rock",
+        "url": "https://www.history.com/this-day-in-history/september-10/nirvanas-smells-like-teen-spirit-is-released-as-a-single",
+        "scope": "provisional",
+        "note": "Independent historical description; version/recording-level review still needed."
+      },
+      "result": {
+        "classification": "UNKNOWN",
+        "confidence": 0,
+        "houseScore": 50,
+        "matchConfidence": 0,
+        "matchedRecording": null,
+        "metadataSources": [],
+        "evidence": [],
+        "explanation": [
+          "No corroborated local recording match. This is not evidence against house.",
+          "No sufficient independent evidence. Missing metadata is never an automatic exclusion.",
+          "Heuristic scores only; no model, audio, runtime HTTP request or Spotify data is used."
+        ]
+      }
+    },
+    {
+      "caseId": "unrelated-3",
+      "stratum": "unrelated",
+      "title": "So What",
+      "artist": "Miles Davis",
+      "gold": {
+        "family": "other",
+        "genre": "jazz",
+        "url": "https://www.milesdavis.com/music/miles-101/",
+        "scope": "release",
+        "note": "Official album context; studio original must not be confused with numerous live recordings."
+      },
+      "result": {
+        "classification": "UNKNOWN",
+        "confidence": 0,
+        "houseScore": 50,
+        "matchConfidence": 0,
+        "matchedRecording": null,
+        "metadataSources": [],
+        "evidence": [],
+        "explanation": [
+          "No corroborated local recording match. This is not evidence against house.",
+          "No sufficient independent evidence. Missing metadata is never an automatic exclusion.",
+          "Heuristic scores only; no model, audio, runtime HTTP request or Spotify data is used."
+        ]
+      }
+    }
+  ]
+}

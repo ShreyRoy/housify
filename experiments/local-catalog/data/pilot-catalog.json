@@ -1,0 +1,409 @@
+{
+  "sources": [
+    {
+      "id": "mb-core",
+      "name": "MusicBrainz community core metadata",
+      "url": "https://musicbrainz.org/doc/About/Data_License",
+      "license": "CC0-1.0",
+      "version": "API snapshot 2026-11-24T18:45:53.404Z",
+      "obtainedAt": "2026-11-24T18:45:53.404Z"
+    },
+    {
+      "id": "mb-tags",
+      "name": "MusicBrainz community genre/tag associations",
+      "url": "https://musicbrainz.org/doc/About/Data_License",
+      "license": "CC-BY-NC-SA-3.0",
+      "version": "API snapshot 2026-11-24T18:45:53.404Z",
+      "obtainedAt": "2026-11-24T18:45:53.404Z"
+    }
+  ],
+  "artists": [
+    {
+      "id": "056e4f3e-d505-4dad-8ec1-d04f521cbb56",
+      "name": "Daft Punk",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "7b75e88a-f211-4886-8c3d-dd9d7171eee5",
+      "name": "Stardust",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "947f6671-054c-42bb-a36f-a4fd25857135",
+      "name": "Stardust",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "bca46a0c-25c9-42ca-98c2-e64c8a5e337e",
+      "name": "Fred again..",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "e457531c-4add-45f0-9998-f65ec53a305c",
+      "name": "KETTAMA",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "4c3cffca-37b7-4ecd-9320-e6dcc2cb837a",
+      "name": "Prospa",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "ec4f15e9-0a88-41d4-b73a-9dd972ba8843",
+      "name": "Josh Baker",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "91d7f956-3721-4c53-9035-f3aad3ae415a",
+      "name": "Omar+",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "a9b88c14-4191-43bf-9895-bd5c7c6a38a8",
+      "name": "Franky Rizardo",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "ea0bacf3-e42d-45d3-8dc7-2e3ded62adf1",
+      "name": "Poppy Baskcomb",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "81d12ca7-5b89-4d21-8736-860b7400b4eb",
+      "name": "Baby Keem",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "122a2714-24f8-4046-a532-64064b5076d2",
+      "name": "Thomas Bangalter",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "125ec42a-7229-4250-afc5-e057484327fe",
+      "name": "[unknown]",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "1de4e373-e597-4087-bf3d-256ec597749e",
+      "name": "Charlotte de Witte",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "34c63966-445c-4613-afe1-4f0e1e53ae9a",
+      "name": "Fatboy Slim",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "590c3c69-5022-4734-ab26-175385b3218e",
+      "name": "Kaspar",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "2e40998c-e1c3-4063-9b03-03279ff64d4b",
+      "name": "A*S*Y*S",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "6e5c1366-5891-4e01-bb13-6c8b2c8cdd35",
+      "name": "MJ Cole",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "045bc733-e2f0-4f3b-8807-6a6d84505ea8",
+      "name": "Aly & Fila",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "5987968d-2106-48f8-a0f3-c62817a84f93",
+      "name": "Jwaydan",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+      "name": "Bicep",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "1d543e07-d0d2-4834-a8db-d65c50c2a856",
+      "name": "Dolly Parton",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "5b11f4ce-a62d-471e-81fc-a69a8278c7da",
+      "name": "Nirvana",
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "561d854a-6a28-4aa7-8c99-323e6ce46c2a",
+      "name": "Miles Davis",
+      "sourceId": "mb-core"
+    }
+  ],
+  "labels": [
+    {
+      "label-code": 102510,
+      "genres": [],
+      "type": null,
+      "name": "LTF Records",
+      "disambiguation": "",
+      "sort-name": "LTF Records",
+      "id": "6e8b79c0-dd89-4fd0-8719-e9a563174025",
+      "type-id": null,
+      "tags": [],
+      "sourceId": "mb-core"
+    },
+    {
+      "disambiguation": "",
+      "name": "Baker's Dozen",
+      "label-code": null,
+      "type-id": null,
+      "id": "ea13d947-aee5-4edf-b458-aa5b1be49e24",
+      "genres": [],
+      "sort-name": "Baker's Dozen",
+      "tags": [],
+      "type": null,
+      "sourceId": "mb-core"
+    },
+    {
+      "id": "50c384a2-0b44-401b-b893-8181173339c7",
+      "genres": [
+        {
+          "count": 1,
+          "id": "e5bba957-8c91-496a-a675-c6d0c6b51c33",
+          "disambiguation": "",
+          "name": "dance"
+        },
+        {
+          "disambiguation": "",
+          "name": "folk rock",
+          "count": 2,
+          "id": "445dc48f-5233-4b4f-987f-867ff9ade836"
+        },
+        {
+          "disambiguation": "",
+          "name": "free jazz",
+          "count": 2,
+          "id": "3c31635b-a5a7-44eb-ab9d-4bbde11da2d4"
+        },
+        {
+          "name": "hard rock",
+          "disambiguation": "",
+          "id": "51cb9f91-e6a2-41bf-891f-e78e3f1e52ab",
+          "count": 2
+        },
+        {
+          "disambiguation": "",
+          "name": "hip hop",
+          "count": 2,
+          "id": "52faa157-6bad-4d86-a0ab-d4dec7d2513c"
+        },
+        {
+          "disambiguation": "",
+          "name": "jazz",
+          "count": 2,
+          "id": "a715278f-1580-409f-8078-4ffbc800e08b"
+        },
+        {
+          "name": "latin",
+          "disambiguation": "",
+          "id": "7369bb8b-3399-4180-8cb2-4e37e0e7b0e7",
+          "count": 1
+        },
+        {
+          "disambiguation": "",
+          "name": "pop",
+          "count": 1,
+          "id": "911c7bbb-172d-4df8-9478-dbff4296e791"
+        },
+        {
+          "name": "r&b",
+          "disambiguation": "",
+          "id": "31be54b2-4d0c-42df-aa44-c496c7b4c3c3",
+          "count": 1
+        },
+        {
+          "name": "rock",
+          "disambiguation": "",
+          "id": "0e3fc579-2d24-4f20-9dae-736e1ec78798",
+          "count": 3
+        },
+        {
+          "disambiguation": "",
+          "name": "trance",
+          "count": 1,
+          "id": "2afc2320-384f-43a4-a71e-1b763c485045"
+        }
+      ],
+      "sort-name": "Atlantic",
+      "tags": [
+        {
+          "name": "american",
+          "count": 1
+        },
+        {
+          "name": "américain",
+          "count": 1
+        },
+        {
+          "count": 1,
+          "name": "clean up"
+        },
+        {
+          "name": "dance",
+          "count": 1
+        },
+        {
+          "count": 1,
+          "name": "discogs dump"
+        },
+        {
+          "count": 2,
+          "name": "folk rock"
+        },
+        {
+          "count": 2,
+          "name": "free jazz"
+        },
+        {
+          "count": 2,
+          "name": "hard rock"
+        },
+        {
+          "name": "hip hop",
+          "count": 2
+        },
+        {
+          "name": "jazz",
+          "count": 2
+        },
+        {
+          "name": "latin",
+          "count": 1
+        },
+        {
+          "name": "major label",
+          "count": 1
+        },
+        {
+          "name": "pop",
+          "count": 1
+        },
+        {
+          "count": 1,
+          "name": "r&b"
+        },
+        {
+          "name": "rock",
+          "count": 3
+        },
+        {
+          "count": 1,
+          "name": "the cherry blues project"
+        },
+        {
+          "name": "trance",
+          "count": 1
+        },
+        {
+          "name": "usa",
+          "count": 1
+        }
+      ],
+      "type": "Imprint",
+      "disambiguation": "Warner Music imprint",
+      "name": "Atlantic",
+      "label-code": 121,
+      "type-id": "b6285b2a-3514-3d43-80df-fcf528824ded",
+      "sourceId": "mb-core"
+    }
+  ],
+  "releases": [
+    {
+      "id": "befa2003-91c3-4556-a9e7-4b9235bf0c6b",
+      "title": "Shinjuku",
+      "sourceId": "mb-core",
+      "date": "2026-03-20",
+      "labels": [
+        "6e8b79c0-dd89-4fd0-8719-e9a563174025"
+      ],
+      "recordingIds": [
+        "60489765-e3e2-4176-9985-c7b651230784"
+      ],
+      "compilation": false
+    },
+    {
+      "id": "897a73ff-7f31-4f5a-bb82-76911a8e6713",
+      "title": "My Place",
+      "sourceId": "mb-core",
+      "date": "2026-07-03",
+      "labels": [
+        "ea13d947-aee5-4edf-b458-aa5b1be49e24"
+      ],
+      "recordingIds": [
+        "50d0659a-896b-41f9-832d-4fd7d73339ba"
+      ],
+      "compilation": false
+    },
+    {
+      "id": "f312b536-f06c-4fb5-933f-034e8d6b8662",
+      "title": "USB",
+      "sourceId": "mb-core",
+      "date": "2022-01-18",
+      "labels": [
+        "50c384a2-0b44-401b-b893-8181173339c7"
+      ],
+      "recordingIds": [
+        "7002d67a-83a8-49c2-abcd-539a3168d954"
+      ],
+      "compilation": false
+    }
+  ],
+  "recordings": [
+    {
+      "id": "60489765-e3e2-4176-9985-c7b651230784",
+      "title": "Shinjuku",
+      "sourceId": "mb-core",
+      "artistIds": [
+        "a9b88c14-4191-43bf-9895-bd5c7c6a38a8"
+      ],
+      "durationMs": 167905,
+      "isrcs": [
+        "NLML62600055"
+      ]
+    },
+    {
+      "id": "50d0659a-896b-41f9-832d-4fd7d73339ba",
+      "title": "My Place",
+      "sourceId": "mb-core",
+      "artistIds": [
+        "ec4f15e9-0a88-41d4-b73a-9dd972ba8843",
+        "ea0bacf3-e42d-45d3-8dc7-2e3ded62adf1"
+      ],
+      "durationMs": 159615,
+      "isrcs": [
+        "QT8JC2653525"
+      ]
+    },
+    {
+      "id": "7002d67a-83a8-49c2-abcd-539a3168d954",
+      "title": "leavemealone",
+      "sourceId": "mb-core",
+      "artistIds": [
+        "bca46a0c-25c9-42ca-98c2-e64c8a5e337e",
+        "81d12ca7-5b89-4d21-8736-860b7400b4eb"
+      ],
+      "durationMs": 222784,
+      "isrcs": [
+        "GBAHS2301465"
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "entity": "recording",
+      "entityId": "7002d67a-83a8-49c2-abcd-539a3168d954",
+      "genre": "drum n bass",
+      "sourceId": "mb-tags"
+    }
+  ]
+}

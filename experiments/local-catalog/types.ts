@@ -1,0 +1,12 @@
+export type Family = "house" | "adjacent" | "other" | "unknown";
+export type Category = "DEFINITELY_HOUSE" | "POSSIBLY_HOUSE" | "NOT_HOUSE" | "UNKNOWN";
+export type Query = { title: string; artist: string; isrc?: string; recordingId?: string; durationMs?: number; remixer?: string; label?: string };
+export type Source = { id: string; name: string; url: string; license: string; version: string; obtainedAt: string };
+export type Artist = { id: string; name: string; sourceId: string };
+export type Label = Artist;
+export type Release = { id: string; title: string; sourceId: string; date?: string; compilation?: boolean; labels: string[]; recordingIds: string[] };
+export type Recording = { id: string; title: string; artistIds: string[]; remixerIds?: string[]; sourceId: string; durationMs?: number; isrcs: string[] };
+export type Annotation = { entity: "recording" | "release"; entityId: string; genre: string; sourceId: string };
+export type CatalogData = { sources: Source[]; artists: Artist[]; labels: Label[]; releases: Release[]; recordings: Recording[]; annotations: Annotation[] };
+export type Evidence = { level: "recording" | "release" | "artist" | "remixer" | "label"; family: Family; tag: string; strength: number; source: string; provenance: string[]; support?: number; coverage?: number };
+export type Result = { classification: Category; confidence: number; houseScore: number; matchConfidence: number; matchedRecording: { id: string; title: string; artist: string; method: string } | null; metadataSources: Source[]; evidence: Evidence[]; explanation: string[] };
