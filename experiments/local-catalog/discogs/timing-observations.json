@@ -1,0 +1,35 @@
+{
+  "catalogSnapshot": "2026-11-01",
+  "classifierPolicy": "local-context-v2",
+  "earlierObservedRun": {
+    "source": "Recorded tool output from first evaluation; classifier and catalog unchanged, before extra reporting counters",
+    "warmMedianMs": 0.288167,
+    "warmP95Ms": 4.808625,
+    "idBatchMs": 571.5605,
+    "titleOnlyBatchMs": 3999.5645
+  },
+  "latestRecordedRun": {
+    "openMs": 0.5898339999999962,
+    "firstConnectionLookupMs": 69.88845799999999,
+    "initialPassMedianMs": 3.9984169999999892,
+    "initialPassP95Ms": 170.98870799999986,
+    "freshConnectionMedianMs": 1.8418749999982538,
+    "freshConnectionP95Ms": 26.115334000001894,
+    "warmMedianMs": 0.4101249999985157,
+    "warmP95Ms": 7.993875000000116,
+    "batchDistinctQueries": 2000,
+    "batchCategories": {
+      "POSSIBLY_HOUSE": 1324,
+      "UNKNOWN": 673,
+      "DEFINITELY_HOUSE": 2,
+      "NOT_HOUSE": 1
+    },
+    "batchMs": 1976.1223339999997,
+    "batchQueriesPerSecond": 1012.0830910056403,
+    "titleOnlyBatchMs": 25270.191084000002,
+    "titleOnlyBatchQueriesPerSecond": 79.14463303232851,
+    "processPeakRssBytes": 266502144,
+    "limitation": "Fresh connection / first lookup is not OS-cold disk: import warmed filesystem caches. No system-wide cache purge was performed. Catalog-derived batch IDs make identity lookup easier than title-only user queries."
+  },
+  "limitations": "OS cache/workload not controlled; later run initially overlapped archive checksum verification; these observations are not a production latency guarantee."
+}

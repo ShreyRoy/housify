@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS release_context(release_id TEXT PRIMARY KEY REFERENCES releases(id), release_type TEXT NOT NULL, track_count INTEGER NOT NULL, genre_count INTEGER NOT NULL, style_count INTEGER NOT NULL, master_id TEXT, formats_json TEXT NOT NULL, source_url TEXT NOT NULL, import_version TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS recording_context(recording_id TEXT PRIMARY KEY REFERENCES recordings(id), identity_kind TEXT NOT NULL, candidate_signature TEXT NOT NULL, verified INTEGER NOT NULL DEFAULT 0);
+CREATE TABLE IF NOT EXISTS release_tag_kinds(release_id TEXT NOT NULL REFERENCES releases(id), tag TEXT NOT NULL, kind TEXT NOT NULL, PRIMARY KEY(release_id,tag,kind));
+CREATE TABLE IF NOT EXISTS catalog_numbers(release_id TEXT NOT NULL REFERENCES releases(id), label_id TEXT NOT NULL REFERENCES labels(id), catalog_number TEXT NOT NULL, PRIMARY KEY(release_id,label_id,catalog_number));
+CREATE TABLE IF NOT EXISTS release_track_details(release_id TEXT NOT NULL, position INTEGER NOT NULL, source_position TEXT NOT NULL, source_title TEXT NOT NULL, credits_json TEXT NOT NULL, PRIMARY KEY(release_id,position), FOREIGN KEY(release_id,position) REFERENCES release_tracks(release_id,position));
+CREATE TABLE IF NOT EXISTS artist_aliases(artist_id TEXT NOT NULL REFERENCES artists(id), name TEXT NOT NULL, normalized_name TEXT NOT NULL, PRIMARY KEY(artist_id,name));
+CREATE INDEX IF NOT EXISTS alias_name_idx ON artist_aliases(normalized_name);
+CREATE TABLE IF NOT EXISTS import_state(id INTEGER PRIMARY KEY CHECK(id=1), fingerprint TEXT NOT NULL, options TEXT NOT NULL, processed INTEGER NOT NULL, retained INTEGER NOT NULL, status TEXT NOT NULL, elapsed_seconds REAL NOT NULL);
+CREATE TABLE IF NOT EXISTS catalog_scope(id INTEGER PRIMARY KEY CHECK(id=1), scope TEXT NOT NULL, limitation TEXT NOT NULL);

@@ -1,2 +1,5 @@
 results/*.sqlite
 results/*.sqlite-*
+discogs/artifacts/
+discogs/__pycache__/
+recall-first/artifacts/

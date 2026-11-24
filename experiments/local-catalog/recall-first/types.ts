@@ -1,0 +1,5 @@
+export type Category="DEFINITELY_HOUSE"|"POSSIBLY_HOUSE"|"NOT_HOUSE"|"UNKNOWN";
+export type Query={artist:string;title:string;durationMs?:number;independentRecordingRef?:string};
+export type TrackRow={artist:string;title:string;version:string;cluster:number;duration_min:number|null;duration_max:number|null;house:number;other:number;adjacent:number;conflict:number;strong_house:number;strong_other:number;units:number;house_units:number;other_units:number;tags:string;provenance:string};
+export type ArtistRow={lookup:string;artist:string;aliases:string;sample_size:number;tagged:number;house_samples:number;adjacent_samples:number;house_affinity:number;adjacent_affinity:number;coverage:number;kind:string};
+export type Result={category:Category;confidence:number;origin:"override"|"track"|"artist"|"none";matchedGroups:number;houseEvidence:boolean;nonHouseEvidence:boolean;conflictingEvidence:boolean;tags:string[];provenance:unknown[];artist:{affinity:number;coverage:number;sampleSize:number;kind:string}|null;review:{required:boolean;priority:number|null;reason:string};explanation:string[]};

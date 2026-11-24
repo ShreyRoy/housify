@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-11-24T18:57:52Z",
+  "sourceUrl": "https://data.discogs.com/?download=data%2F2026%2Fdiscogs_20261101_releases.xml.gz",
+  "compressedBytes": 11361019345,
+  "method": "GET with Range bytes=0-0; server ignored Range; canceled body immediately after inspecting response headers",
+  "headContentLength": null,
+  "etag": "6d2b3e5dd2753bbb243ade260e93f7f2-1355",
+  "availableDiskBytes": 610973081600,
+  "approvedPeakBudgetBytes": 30000000000,
+  "importDatabaseCapGiB": 8,
+  "uncompressedArchiveRetained": false,
+  "approval": "User approved download and capped import in this conversation"
+}

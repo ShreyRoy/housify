@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-11-24T20:21:56.840Z",
+  "output": "/Users/shreyroy/Desktop/projects/housify/experiments/local-catalog/recall-first/artifacts/index.sqlite",
+  "sourceBytes": 2710073344,
+  "databaseBytes": 27004928,
+  "titleVersionGroups": 147753,
+  "trackRows": 60639,
+  "artistLookupRows": 2996,
+  "omittedNonHouseGroups": 64974,
+  "elapsedMs": 79914.218708,
+  "peakRssBytes": 945700864,
+  "sourceScope": {
+    "id": 1,
+    "scope": "artists",
+    "limitation": "Partial imported catalog; profiles do not represent complete discographies"
+  },
+  "limitations": "Source is inherited artist-targeted data; builder never reads benchmark names. Not an unbiased worldwide catalog. Negative title/version reservoir capped after full mixed-profile computation; house/adjacent title/version groups are not capped. Duration alternatives are retained together."
+}

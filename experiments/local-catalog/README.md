@@ -1,5 +1,7 @@
 # Local genre catalog: research and isolated proof of concept
 
+The follow-up [Discogs implementation experiment](discogs/README.md) adds a real bulk importer and revised contextual policy. This document preserves the earlier research findings and measurements; current experimental code has since evolved. Production remains separate.
+
 Research date: **24 November 2026**. Production functionality is unchanged. Nothing in this directory is imported by an application route or component. No Spotify requests, playlist exports, audio, credentials, ML models or paid services were used. The optional collection scripts make public metadata requests; the classifier and evaluation run entirely offline.
 
 ## Recommendation
@@ -146,3 +148,7 @@ Recommended next steps, after review:
 5. Refresh imports offline on an intentional monthly cadence, rebuild a versioned SQLite file and atomically swap it after checks; retain the previous file for rollback. Do not add a database server or background scheduler for this personal MVP.
 
 Open limitations: no full-dump coverage measurements, no dump importer, no independently verified exact-recording/ISRC benchmark, no validated 100-track accuracy, sparse genre evidence, incomplete artist/label discographies, conservative matching that loses recall, experimental Node SQLite support, and unresolved future Spotify policy interpretation. These are reasons to review before replacing the working production pipeline.
+
+## Subsequent isolated experiment
+
+See [recall-first/README.md](recall-first/README.md) for the implemented compact consensus index, fresh real-data comparison, measured size/runtime, and limitations. Earlier findings above are historical. Production remains unchanged.

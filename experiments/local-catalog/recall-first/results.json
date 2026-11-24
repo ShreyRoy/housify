@@ -1,0 +1,5509 @@
+{
+  "generatedAt": "2026-11-24T20:22:29.022Z",
+  "holdoutSha256": "403ffb1839cb75d5de8819a68fbdedd04e657b9b24dfba34a56c8ce569787dfb",
+  "design": "40 new track/version candidates, all held out; independent genre references where available. No benchmark names or labels enter preprocessing. Inherited source was artist-targeted; this is not an unbiased catalog or an audio-identity validation.",
+  "databaseBytes": 27004928,
+  "sourceBytes": 2710073344,
+  "build": {
+    "generatedAt": "2026-11-24T20:21:56.840Z",
+    "output": "/Users/shreyroy/Desktop/projects/housify/experiments/local-catalog/recall-first/artifacts/index.sqlite",
+    "sourceBytes": 2710073344,
+    "databaseBytes": 27004928,
+    "titleVersionGroups": 147753,
+    "trackRows": 60639,
+    "artistLookupRows": 2996,
+    "omittedNonHouseGroups": 64974,
+    "elapsedMs": 79914.218708,
+    "peakRssBytes": 945700864,
+    "sourceScope": {
+      "id": 1,
+      "scope": "artists",
+      "limitation": "Partial imported catalog; profiles do not represent complete discographies"
+    },
+    "limitations": "Source is inherited artist-targeted data; builder never reads benchmark names. Not an unbiased worldwide catalog. Negative title/version reservoir capped after full mixed-profile computation; house/adjacent title/version groups are not capped. Duration alternatives are retained together."
+  },
+  "metrics": {
+    "baseline": {
+      "total": 40,
+      "independentlyLabeled": 20,
+      "definitelyHousePrecision": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1
+      },
+      "definitelyHouseRecall": {
+        "numerator": 1,
+        "denominator": 14,
+        "value": 0.07142857142857142
+      },
+      "definitelyOrAnyReviewRecall": {
+        "numerator": 14,
+        "denominator": 14,
+        "value": 1
+      },
+      "definitelyOrPossiblyRecallExcludingUnknown": {
+        "numerator": 7,
+        "denominator": 14,
+        "value": 0.5
+      },
+      "actualHouseIncorrectlyExcluded": [],
+      "manualReview": {
+        "numerator": 39,
+        "denominator": 40,
+        "value": 0.975
+      },
+      "unknown": {
+        "numerator": 22,
+        "denominator": 40,
+        "value": 0.55
+      },
+      "possibly": {
+        "numerator": 17,
+        "denominator": 40,
+        "value": 0.425
+      },
+      "automaticDecisions": {
+        "numerator": 1,
+        "denominator": 40,
+        "value": 0.025
+      },
+      "houseAmongJudgedReviewCandidates": {
+        "numerator": 13,
+        "denominator": 19,
+        "value": 0.6842105263157895
+      },
+      "reviewRanking": {
+        "judgedOnlyNdcgAt10": 1,
+        "judgedOnlyPrecisionAt5": {
+          "numerator": 5,
+          "denominator": 5,
+          "value": 1
+        },
+        "first10": [
+          {
+            "id": "fresh-01",
+            "gold": "house",
+            "priority": null
+          },
+          {
+            "id": "fresh-02",
+            "gold": "house",
+            "priority": null
+          },
+          {
+            "id": "fresh-03",
+            "gold": "house",
+            "priority": null
+          },
+          {
+            "id": "fresh-04",
+            "gold": null,
+            "priority": null
+          },
+          {
+            "id": "fresh-05",
+            "gold": null,
+            "priority": null
+          },
+          {
+            "id": "fresh-06",
+            "gold": "house",
+            "priority": null
+          },
+          {
+            "id": "fresh-07",
+            "gold": "house",
+            "priority": null
+          },
+          {
+            "id": "fresh-08",
+            "gold": null,
+            "priority": null
+          },
+          {
+            "id": "fresh-09",
+            "gold": "house",
+            "priority": null
+          },
+          {
+            "id": "fresh-10",
+            "gold": null,
+            "priority": null
+          }
+        ],
+        "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+      }
+    },
+    "compact": {
+      "total": 40,
+      "independentlyLabeled": 20,
+      "definitelyHousePrecision": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1
+      },
+      "definitelyHouseRecall": {
+        "numerator": 2,
+        "denominator": 14,
+        "value": 0.14285714285714285
+      },
+      "definitelyOrAnyReviewRecall": {
+        "numerator": 14,
+        "denominator": 14,
+        "value": 1
+      },
+      "definitelyOrPossiblyRecallExcludingUnknown": {
+        "numerator": 9,
+        "denominator": 14,
+        "value": 0.6428571428571429
+      },
+      "actualHouseIncorrectlyExcluded": [],
+      "manualReview": {
+        "numerator": 35,
+        "denominator": 40,
+        "value": 0.875
+      },
+      "unknown": {
+        "numerator": 9,
+        "denominator": 40,
+        "value": 0.225
+      },
+      "possibly": {
+        "numerator": 26,
+        "denominator": 40,
+        "value": 0.65
+      },
+      "automaticDecisions": {
+        "numerator": 5,
+        "denominator": 40,
+        "value": 0.125
+      },
+      "houseAmongJudgedReviewCandidates": {
+        "numerator": 12,
+        "denominator": 18,
+        "value": 0.6666666666666666
+      },
+      "reviewRanking": {
+        "judgedOnlyNdcgAt10": 0.7564477297898766,
+        "judgedOnlyPrecisionAt5": {
+          "numerator": 3,
+          "denominator": 5,
+          "value": 0.6
+        },
+        "first10": [
+          {
+            "id": "fresh-01",
+            "gold": "house",
+            "priority": 1
+          },
+          {
+            "id": "fresh-02",
+            "gold": "house",
+            "priority": 1
+          },
+          {
+            "id": "fresh-03",
+            "gold": "house",
+            "priority": 1
+          },
+          {
+            "id": "fresh-04",
+            "gold": null,
+            "priority": 1
+          },
+          {
+            "id": "fresh-16",
+            "gold": null,
+            "priority": 1
+          },
+          {
+            "id": "fresh-22",
+            "gold": null,
+            "priority": 1
+          },
+          {
+            "id": "fresh-26",
+            "gold": null,
+            "priority": 1
+          },
+          {
+            "id": "fresh-33",
+            "gold": null,
+            "priority": 1
+          },
+          {
+            "id": "fresh-38",
+            "gold": "non_house",
+            "priority": 1
+          },
+          {
+            "id": "fresh-10",
+            "gold": null,
+            "priority": 2
+          }
+        ],
+        "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+      }
+    }
+  },
+  "rankingSensitivity": {
+    "baseline": {
+      "orders": 20,
+      "meanJudgedNdcgAt10": 0.7100390982958675,
+      "minJudgedNdcgAt10": 0.36099027181348725,
+      "maxJudgedNdcgAt10": 0.9266360779006401,
+      "meanJudgedPrecisionAt5": 0.71,
+      "values": [
+        {
+          "round": 0,
+          "ndcg": 0.5925846332364244,
+          "precisionAt5": {
+            "numerator": 2,
+            "denominator": 5,
+            "value": 0.4
+          }
+        },
+        {
+          "round": 1,
+          "ndcg": 0.684383072597662,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 2,
+          "ndcg": 0.8899541168509599,
+          "precisionAt5": {
+            "numerator": 4,
+            "denominator": 5,
+            "value": 0.8
+          }
+        },
+        {
+          "round": 3,
+          "ndcg": 0.7791714369672127,
+          "precisionAt5": {
+            "numerator": 4,
+            "denominator": 5,
+            "value": 0.8
+          }
+        },
+        {
+          "round": 4,
+          "ndcg": 0.7289115290270202,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 5,
+          "ndcg": 0.5747915663739762,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 6,
+          "ndcg": 0.6879509227782195,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 7,
+          "ndcg": 0.7573821447149967,
+          "precisionAt5": {
+            "numerator": 4,
+            "denominator": 5,
+            "value": 0.8
+          }
+        },
+        {
+          "round": 8,
+          "ndcg": 0.36099027181348725,
+          "precisionAt5": {
+            "numerator": 2,
+            "denominator": 5,
+            "value": 0.4
+          }
+        },
+        {
+          "round": 9,
+          "ndcg": 0.7312625444731047,
+          "precisionAt5": {
+            "numerator": 4,
+            "denominator": 5,
+            "value": 0.8
+          }
+        },
+        {
+          "round": 10,
+          "ndcg": 0.7630946912803436,
+          "precisionAt5": {
+            "numerator": 4,
+            "denominator": 5,
+            "value": 0.8
+          }
+        },
+        {
+          "round": 11,
+          "ndcg": 0.7846170207230129,
+          "precisionAt5": {
+            "numerator": 5,
+            "denominator": 5,
+            "value": 1
+          }
+        },
+        {
+          "round": 12,
+          "ndcg": 0.7116179486056782,
+          "precisionAt5": {
+            "numerator": 4,
+            "denominator": 5,
+            "value": 0.8
+          }
+        },
+        {
+          "round": 13,
+          "ndcg": 0.6874708847784536,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 14,
+          "ndcg": 0.49276192198755814,
+          "precisionAt5": {
+            "numerator": 1,
+            "denominator": 5,
+            "value": 0.2
+          }
+        },
+        {
+          "round": 15,
+          "ndcg": 0.7034066032439746,
+          "precisionAt5": {
+            "numerator": 4,
+            "denominator": 5,
+            "value": 0.8
+          }
+        },
+        {
+          "round": 16,
+          "ndcg": 0.9216017310213247,
+          "precisionAt5": {
+            "numerator": 5,
+            "denominator": 5,
+            "value": 1
+          }
+        },
+        {
+          "round": 17,
+          "ndcg": 0.9266360779006401,
+          "precisionAt5": {
+            "numerator": 5,
+            "denominator": 5,
+            "value": 1
+          }
+        },
+        {
+          "round": 18,
+          "ndcg": 0.6214990811334173,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 19,
+          "ndcg": 0.800693766409882,
+          "precisionAt5": {
+            "numerator": 5,
+            "denominator": 5,
+            "value": 1
+          }
+        }
+      ],
+      "limitation": "Added to address genre-grouped input-order bias; no classifier rules changed. Same small partially adjudicated test pool, not a new independent validation."
+    },
+    "compact": {
+      "orders": 20,
+      "meanJudgedNdcgAt10": 0.6598021393796942,
+      "minJudgedNdcgAt10": 0.5469356251448461,
+      "maxJudgedNdcgAt10": 0.750637296052051,
+      "meanJudgedPrecisionAt5": 0.5999999999999999,
+      "values": [
+        {
+          "round": 0,
+          "ndcg": 0.6530488081313035,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 1,
+          "ndcg": 0.7411902110103873,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 2,
+          "ndcg": 0.750637296052051,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 3,
+          "ndcg": 0.6429424283490954,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 4,
+          "ndcg": 0.6363762929310753,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 5,
+          "ndcg": 0.5501126236272343,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 6,
+          "ndcg": 0.6390097281865127,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 7,
+          "ndcg": 0.750637296052051,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 8,
+          "ndcg": 0.5469356251448461,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 9,
+          "ndcg": 0.6214011939609386,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 10,
+          "ndcg": 0.7467045958894682,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 11,
+          "ndcg": 0.6804503724350792,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 12,
+          "ndcg": 0.6691255538181726,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 13,
+          "ndcg": 0.6627919420317119,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 14,
+          "ndcg": 0.5519699720241614,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 15,
+          "ndcg": 0.5590796706691326,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 16,
+          "ndcg": 0.7411902110103873,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 17,
+          "ndcg": 0.6870165078530993,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 18,
+          "ndcg": 0.6975961695061491,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        },
+        {
+          "round": 19,
+          "ndcg": 0.6678262889110271,
+          "precisionAt5": {
+            "numerator": 3,
+            "denominator": 5,
+            "value": 0.6
+          }
+        }
+      ],
+      "limitation": "Added to address genre-grouped input-order bias; no classifier rules changed. Same small partially adjudicated test pool, not a new independent validation."
+    }
+  },
+  "artistProfilePresent": {
+    "baseline": {
+      "total": 34,
+      "independentlyLabeled": 17,
+      "definitelyHousePrecision": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1
+      },
+      "definitelyHouseRecall": {
+        "numerator": 1,
+        "denominator": 11,
+        "value": 0.09090909090909091
+      },
+      "definitelyOrAnyReviewRecall": {
+        "numerator": 11,
+        "denominator": 11,
+        "value": 1
+      },
+      "definitelyOrPossiblyRecallExcludingUnknown": {
+        "numerator": 7,
+        "denominator": 11,
+        "value": 0.6363636363636364
+      },
+      "actualHouseIncorrectlyExcluded": [],
+      "manualReview": {
+        "numerator": 33,
+        "denominator": 34,
+        "value": 0.9705882352941176
+      },
+      "unknown": {
+        "numerator": 16,
+        "denominator": 34,
+        "value": 0.47058823529411764
+      },
+      "possibly": {
+        "numerator": 17,
+        "denominator": 34,
+        "value": 0.5
+      },
+      "automaticDecisions": {
+        "numerator": 1,
+        "denominator": 34,
+        "value": 0.029411764705882353
+      },
+      "houseAmongJudgedReviewCandidates": {
+        "numerator": 10,
+        "denominator": 16,
+        "value": 0.625
+      },
+      "reviewRanking": {
+        "judgedOnlyNdcgAt10": 0.9363792118010483,
+        "judgedOnlyPrecisionAt5": {
+          "numerator": 5,
+          "denominator": 5,
+          "value": 1
+        },
+        "first10": [
+          {
+            "id": "fresh-01",
+            "gold": "house",
+            "priority": null
+          },
+          {
+            "id": "fresh-02",
+            "gold": "house",
+            "priority": null
+          },
+          {
+            "id": "fresh-03",
+            "gold": "house",
+            "priority": null
+          },
+          {
+            "id": "fresh-04",
+            "gold": null,
+            "priority": null
+          },
+          {
+            "id": "fresh-05",
+            "gold": null,
+            "priority": null
+          },
+          {
+            "id": "fresh-06",
+            "gold": "house",
+            "priority": null
+          },
+          {
+            "id": "fresh-07",
+            "gold": "house",
+            "priority": null
+          },
+          {
+            "id": "fresh-08",
+            "gold": null,
+            "priority": null
+          },
+          {
+            "id": "fresh-09",
+            "gold": "house",
+            "priority": null
+          },
+          {
+            "id": "fresh-10",
+            "gold": null,
+            "priority": null
+          }
+        ],
+        "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+      }
+    },
+    "compact": {
+      "total": 34,
+      "independentlyLabeled": 17,
+      "definitelyHousePrecision": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1
+      },
+      "definitelyHouseRecall": {
+        "numerator": 2,
+        "denominator": 11,
+        "value": 0.18181818181818182
+      },
+      "definitelyOrAnyReviewRecall": {
+        "numerator": 11,
+        "denominator": 11,
+        "value": 1
+      },
+      "definitelyOrPossiblyRecallExcludingUnknown": {
+        "numerator": 9,
+        "denominator": 11,
+        "value": 0.8181818181818182
+      },
+      "actualHouseIncorrectlyExcluded": [],
+      "manualReview": {
+        "numerator": 29,
+        "denominator": 34,
+        "value": 0.8529411764705882
+      },
+      "unknown": {
+        "numerator": 3,
+        "denominator": 34,
+        "value": 0.08823529411764706
+      },
+      "possibly": {
+        "numerator": 26,
+        "denominator": 34,
+        "value": 0.7647058823529411
+      },
+      "automaticDecisions": {
+        "numerator": 5,
+        "denominator": 34,
+        "value": 0.14705882352941177
+      },
+      "houseAmongJudgedReviewCandidates": {
+        "numerator": 9,
+        "denominator": 15,
+        "value": 0.6
+      },
+      "reviewRanking": {
+        "judgedOnlyNdcgAt10": 0.807843361168721,
+        "judgedOnlyPrecisionAt5": {
+          "numerator": 3,
+          "denominator": 5,
+          "value": 0.6
+        },
+        "first10": [
+          {
+            "id": "fresh-01",
+            "gold": "house",
+            "priority": 1
+          },
+          {
+            "id": "fresh-02",
+            "gold": "house",
+            "priority": 1
+          },
+          {
+            "id": "fresh-03",
+            "gold": "house",
+            "priority": 1
+          },
+          {
+            "id": "fresh-04",
+            "gold": null,
+            "priority": 1
+          },
+          {
+            "id": "fresh-16",
+            "gold": null,
+            "priority": 1
+          },
+          {
+            "id": "fresh-22",
+            "gold": null,
+            "priority": 1
+          },
+          {
+            "id": "fresh-26",
+            "gold": null,
+            "priority": 1
+          },
+          {
+            "id": "fresh-33",
+            "gold": null,
+            "priority": 1
+          },
+          {
+            "id": "fresh-38",
+            "gold": "non_house",
+            "priority": 1
+          },
+          {
+            "id": "fresh-10",
+            "gold": null,
+            "priority": 2
+          }
+        ],
+        "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+      }
+    }
+  },
+  "byGroup": {
+    "mainstream": {
+      "baseline": {
+        "total": 4,
+        "independentlyLabeled": 3,
+        "definitelyHousePrecision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyHouseRecall": {
+          "numerator": 0,
+          "denominator": 3,
+          "value": 0
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 2,
+          "denominator": 3,
+          "value": 0.6666666666666666
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "unknown": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "possibly": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "automaticDecisions": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": 1,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1
+          },
+          "first10": [
+            {
+              "id": "fresh-01",
+              "gold": "house",
+              "priority": null
+            },
+            {
+              "id": "fresh-02",
+              "gold": "house",
+              "priority": null
+            },
+            {
+              "id": "fresh-03",
+              "gold": "house",
+              "priority": null
+            },
+            {
+              "id": "fresh-04",
+              "gold": null,
+              "priority": null
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      },
+      "compact": {
+        "total": 4,
+        "independentlyLabeled": 3,
+        "definitelyHousePrecision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyHouseRecall": {
+          "numerator": 0,
+          "denominator": 3,
+          "value": 0
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "unknown": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "possibly": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "automaticDecisions": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": 1,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1
+          },
+          "first10": [
+            {
+              "id": "fresh-01",
+              "gold": "house",
+              "priority": 1
+            },
+            {
+              "id": "fresh-02",
+              "gold": "house",
+              "priority": 1
+            },
+            {
+              "id": "fresh-03",
+              "gold": "house",
+              "priority": 1
+            },
+            {
+              "id": "fresh-04",
+              "gold": null,
+              "priority": 1
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      }
+    },
+    "underground": {
+      "baseline": {
+        "total": 4,
+        "independentlyLabeled": 2,
+        "definitelyHousePrecision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyHouseRecall": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 1,
+          "denominator": 2,
+          "value": 0.5
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "unknown": {
+          "numerator": 1,
+          "denominator": 4,
+          "value": 0.25
+        },
+        "possibly": {
+          "numerator": 3,
+          "denominator": 4,
+          "value": 0.75
+        },
+        "automaticDecisions": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": 1,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1
+          },
+          "first10": [
+            {
+              "id": "fresh-05",
+              "gold": null,
+              "priority": null
+            },
+            {
+              "id": "fresh-06",
+              "gold": "house",
+              "priority": null
+            },
+            {
+              "id": "fresh-07",
+              "gold": "house",
+              "priority": null
+            },
+            {
+              "id": "fresh-08",
+              "gold": null,
+              "priority": null
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      },
+      "compact": {
+        "total": 4,
+        "independentlyLabeled": 2,
+        "definitelyHousePrecision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyHouseRecall": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 3,
+          "denominator": 4,
+          "value": 0.75
+        },
+        "unknown": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "possibly": {
+          "numerator": 3,
+          "denominator": 4,
+          "value": 0.75
+        },
+        "automaticDecisions": {
+          "numerator": 1,
+          "denominator": 4,
+          "value": 0.25
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": 1,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1
+          },
+          "first10": [
+            {
+              "id": "fresh-06",
+              "gold": "house",
+              "priority": 3
+            },
+            {
+              "id": "fresh-07",
+              "gold": "house",
+              "priority": 3
+            },
+            {
+              "id": "fresh-08",
+              "gold": null,
+              "priority": 3
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      }
+    },
+    "recent": {
+      "baseline": {
+        "total": 4,
+        "independentlyLabeled": 2,
+        "definitelyHousePrecision": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1
+        },
+        "definitelyHouseRecall": {
+          "numerator": 1,
+          "denominator": 2,
+          "value": 0.5
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 3,
+          "denominator": 4,
+          "value": 0.75
+        },
+        "unknown": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "possibly": {
+          "numerator": 1,
+          "denominator": 4,
+          "value": 0.25
+        },
+        "automaticDecisions": {
+          "numerator": 1,
+          "denominator": 4,
+          "value": 0.25
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": 1,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1
+          },
+          "first10": [
+            {
+              "id": "fresh-09",
+              "gold": "house",
+              "priority": null
+            },
+            {
+              "id": "fresh-10",
+              "gold": null,
+              "priority": null
+            },
+            {
+              "id": "fresh-12",
+              "gold": null,
+              "priority": null
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      },
+      "compact": {
+        "total": 4,
+        "independentlyLabeled": 2,
+        "definitelyHousePrecision": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1
+        },
+        "definitelyHouseRecall": {
+          "numerator": 1,
+          "denominator": 2,
+          "value": 0.5
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "unknown": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "possibly": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "automaticDecisions": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": 1,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1
+          },
+          "first10": [
+            {
+              "id": "fresh-10",
+              "gold": null,
+              "priority": 2
+            },
+            {
+              "id": "fresh-09",
+              "gold": "house",
+              "priority": 3
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      }
+    },
+    "niche": {
+      "baseline": {
+        "total": 4,
+        "independentlyLabeled": 2,
+        "definitelyHousePrecision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyHouseRecall": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "unknown": {
+          "numerator": 3,
+          "denominator": 4,
+          "value": 0.75
+        },
+        "possibly": {
+          "numerator": 1,
+          "denominator": 4,
+          "value": 0.25
+        },
+        "automaticDecisions": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": 1,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1
+          },
+          "first10": [
+            {
+              "id": "fresh-13",
+              "gold": "house",
+              "priority": null
+            },
+            {
+              "id": "fresh-14",
+              "gold": "house",
+              "priority": null
+            },
+            {
+              "id": "fresh-15",
+              "gold": null,
+              "priority": null
+            },
+            {
+              "id": "fresh-16",
+              "gold": null,
+              "priority": null
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      },
+      "compact": {
+        "total": 4,
+        "independentlyLabeled": 2,
+        "definitelyHousePrecision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyHouseRecall": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "unknown": {
+          "numerator": 3,
+          "denominator": 4,
+          "value": 0.75
+        },
+        "possibly": {
+          "numerator": 1,
+          "denominator": 4,
+          "value": 0.25
+        },
+        "automaticDecisions": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": 1,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1
+          },
+          "first10": [
+            {
+              "id": "fresh-16",
+              "gold": null,
+              "priority": 1
+            },
+            {
+              "id": "fresh-13",
+              "gold": "house",
+              "priority": 5
+            },
+            {
+              "id": "fresh-14",
+              "gold": "house",
+              "priority": 5
+            },
+            {
+              "id": "fresh-15",
+              "gold": null,
+              "priority": 5
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      }
+    },
+    "rapper": {
+      "baseline": {
+        "total": 4,
+        "independentlyLabeled": 4,
+        "definitelyHousePrecision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyHouseRecall": {
+          "numerator": 0,
+          "denominator": 3,
+          "value": 0
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 1,
+          "denominator": 3,
+          "value": 0.3333333333333333
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "unknown": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "possibly": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "automaticDecisions": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 3,
+          "denominator": 4,
+          "value": 0.75
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": 1,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 3,
+            "denominator": 4,
+            "value": 0.75
+          },
+          "first10": [
+            {
+              "id": "fresh-17",
+              "gold": "house",
+              "priority": null
+            },
+            {
+              "id": "fresh-18",
+              "gold": "house",
+              "priority": null
+            },
+            {
+              "id": "fresh-19",
+              "gold": "house",
+              "priority": null
+            },
+            {
+              "id": "fresh-20",
+              "gold": "non_house",
+              "priority": null
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      },
+      "compact": {
+        "total": 4,
+        "independentlyLabeled": 4,
+        "definitelyHousePrecision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyHouseRecall": {
+          "numerator": 0,
+          "denominator": 3,
+          "value": 0
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 1,
+          "denominator": 3,
+          "value": 0.3333333333333333
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "unknown": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "possibly": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "automaticDecisions": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 3,
+          "denominator": 4,
+          "value": 0.75
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": 0.9060254355346823,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 3,
+            "denominator": 4,
+            "value": 0.75
+          },
+          "first10": [
+            {
+              "id": "fresh-19",
+              "gold": "house",
+              "priority": 3
+            },
+            {
+              "id": "fresh-20",
+              "gold": "non_house",
+              "priority": 3
+            },
+            {
+              "id": "fresh-17",
+              "gold": "house",
+              "priority": 6
+            },
+            {
+              "id": "fresh-18",
+              "gold": "house",
+              "priority": 6
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      }
+    },
+    "mixed": {
+      "baseline": {
+        "total": 4,
+        "independentlyLabeled": 1,
+        "definitelyHousePrecision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyHouseRecall": {
+          "numerator": 0,
+          "denominator": 1,
+          "value": 0
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "unknown": {
+          "numerator": 1,
+          "denominator": 4,
+          "value": 0.25
+        },
+        "possibly": {
+          "numerator": 3,
+          "denominator": 4,
+          "value": 0.75
+        },
+        "automaticDecisions": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": 1,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1
+          },
+          "first10": [
+            {
+              "id": "fresh-21",
+              "gold": "house",
+              "priority": null
+            },
+            {
+              "id": "fresh-22",
+              "gold": null,
+              "priority": null
+            },
+            {
+              "id": "fresh-23",
+              "gold": null,
+              "priority": null
+            },
+            {
+              "id": "fresh-24",
+              "gold": null,
+              "priority": null
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      },
+      "compact": {
+        "total": 4,
+        "independentlyLabeled": 1,
+        "definitelyHousePrecision": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1
+        },
+        "definitelyHouseRecall": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "unknown": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "possibly": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "automaticDecisions": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": null,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "first10": [
+            {
+              "id": "fresh-22",
+              "gold": null,
+              "priority": 1
+            },
+            {
+              "id": "fresh-23",
+              "gold": null,
+              "priority": 3
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      }
+    },
+    "version": {
+      "baseline": {
+        "total": 4,
+        "independentlyLabeled": 0,
+        "definitelyHousePrecision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyHouseRecall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "unknown": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "possibly": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "automaticDecisions": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": null,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "first10": [
+            {
+              "id": "fresh-25",
+              "gold": null,
+              "priority": null
+            },
+            {
+              "id": "fresh-26",
+              "gold": null,
+              "priority": null
+            },
+            {
+              "id": "fresh-27",
+              "gold": null,
+              "priority": null
+            },
+            {
+              "id": "fresh-28",
+              "gold": null,
+              "priority": null
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      },
+      "compact": {
+        "total": 4,
+        "independentlyLabeled": 0,
+        "definitelyHousePrecision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyHouseRecall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "unknown": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "possibly": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "automaticDecisions": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": null,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "first10": [
+            {
+              "id": "fresh-26",
+              "gold": null,
+              "priority": 1
+            },
+            {
+              "id": "fresh-28",
+              "gold": null,
+              "priority": 2
+            },
+            {
+              "id": "fresh-25",
+              "gold": null,
+              "priority": 3
+            },
+            {
+              "id": "fresh-27",
+              "gold": null,
+              "priority": 3
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      }
+    },
+    "emerging": {
+      "baseline": {
+        "total": 4,
+        "independentlyLabeled": 1,
+        "definitelyHousePrecision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyHouseRecall": {
+          "numerator": 0,
+          "denominator": 1,
+          "value": 0
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 0,
+          "denominator": 1,
+          "value": 0
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "unknown": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "possibly": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "automaticDecisions": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": 1,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1
+          },
+          "first10": [
+            {
+              "id": "fresh-29",
+              "gold": null,
+              "priority": null
+            },
+            {
+              "id": "fresh-30",
+              "gold": null,
+              "priority": null
+            },
+            {
+              "id": "fresh-31",
+              "gold": null,
+              "priority": null
+            },
+            {
+              "id": "fresh-32",
+              "gold": "house",
+              "priority": null
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      },
+      "compact": {
+        "total": 4,
+        "independentlyLabeled": 1,
+        "definitelyHousePrecision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyHouseRecall": {
+          "numerator": 0,
+          "denominator": 1,
+          "value": 0
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 0,
+          "denominator": 1,
+          "value": 0
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "unknown": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "possibly": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "automaticDecisions": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": 1,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1
+          },
+          "first10": [
+            {
+              "id": "fresh-29",
+              "gold": null,
+              "priority": 5
+            },
+            {
+              "id": "fresh-30",
+              "gold": null,
+              "priority": 5
+            },
+            {
+              "id": "fresh-31",
+              "gold": null,
+              "priority": 5
+            },
+            {
+              "id": "fresh-32",
+              "gold": "house",
+              "priority": 5
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      }
+    },
+    "adjacent": {
+      "baseline": {
+        "total": 4,
+        "independentlyLabeled": 1,
+        "definitelyHousePrecision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyHouseRecall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "unknown": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "possibly": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "automaticDecisions": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 0,
+          "denominator": 1,
+          "value": 0
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": null,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0
+          },
+          "first10": [
+            {
+              "id": "fresh-33",
+              "gold": null,
+              "priority": null
+            },
+            {
+              "id": "fresh-34",
+              "gold": null,
+              "priority": null
+            },
+            {
+              "id": "fresh-35",
+              "gold": "non_house",
+              "priority": null
+            },
+            {
+              "id": "fresh-36",
+              "gold": null,
+              "priority": null
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      },
+      "compact": {
+        "total": 4,
+        "independentlyLabeled": 1,
+        "definitelyHousePrecision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyHouseRecall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "unknown": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "possibly": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "automaticDecisions": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 0,
+          "denominator": 1,
+          "value": 0
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": null,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 0,
+            "denominator": 1,
+            "value": 0
+          },
+          "first10": [
+            {
+              "id": "fresh-33",
+              "gold": null,
+              "priority": 1
+            },
+            {
+              "id": "fresh-35",
+              "gold": "non_house",
+              "priority": 2
+            },
+            {
+              "id": "fresh-34",
+              "gold": null,
+              "priority": 3
+            },
+            {
+              "id": "fresh-36",
+              "gold": null,
+              "priority": 3
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      }
+    },
+    "unrelated": {
+      "baseline": {
+        "total": 4,
+        "independentlyLabeled": 4,
+        "definitelyHousePrecision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyHouseRecall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "unknown": {
+          "numerator": 3,
+          "denominator": 4,
+          "value": 0.75
+        },
+        "possibly": {
+          "numerator": 1,
+          "denominator": 4,
+          "value": 0.25
+        },
+        "automaticDecisions": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": null,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 0,
+            "denominator": 4,
+            "value": 0
+          },
+          "first10": [
+            {
+              "id": "fresh-37",
+              "gold": "non_house",
+              "priority": null
+            },
+            {
+              "id": "fresh-38",
+              "gold": "non_house",
+              "priority": null
+            },
+            {
+              "id": "fresh-39",
+              "gold": "non_house",
+              "priority": null
+            },
+            {
+              "id": "fresh-40",
+              "gold": "non_house",
+              "priority": null
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      },
+      "compact": {
+        "total": 4,
+        "independentlyLabeled": 4,
+        "definitelyHousePrecision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyHouseRecall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyOrAnyReviewRecall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "definitelyOrPossiblyRecallExcludingUnknown": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "actualHouseIncorrectlyExcluded": [],
+        "manualReview": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "unknown": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "possibly": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1
+        },
+        "automaticDecisions": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "houseAmongJudgedReviewCandidates": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0
+        },
+        "reviewRanking": {
+          "judgedOnlyNdcgAt10": null,
+          "judgedOnlyPrecisionAt5": {
+            "numerator": 0,
+            "denominator": 4,
+            "value": 0
+          },
+          "first10": [
+            {
+              "id": "fresh-38",
+              "gold": "non_house",
+              "priority": 1
+            },
+            {
+              "id": "fresh-40",
+              "gold": "non_house",
+              "priority": 3
+            },
+            {
+              "id": "fresh-37",
+              "gold": "non_house",
+              "priority": 4
+            },
+            {
+              "id": "fresh-39",
+              "gold": "non_house",
+              "priority": 4
+            }
+          ],
+          "limitation": "NDCG/precision filter unadjudicated genres rather than treating them as negatives. Baseline queue uses input order; it has no prioritization."
+        }
+      }
+    }
+  },
+  "timings": {
+    "baseline": {
+      "queries": 2000,
+      "totalMs": 5064.590042,
+      "queriesPerSecond": 394.89869533649414,
+      "medianMs": 0.8196250000000873,
+      "p95Ms": 9.526374999999916,
+      "categoryCounts": {
+        "POSSIBLY_HOUSE": 1060,
+        "UNKNOWN": 922,
+        "DEFINITELY_HOUSE": 12,
+        "NOT_HOUSE": 6
+      }
+    },
+    "compact": {
+      "queries": 2000,
+      "totalMs": 83.3397500000001,
+      "queriesPerSecond": 23998.152142285016,
+      "medianMs": 0.03458299999965675,
+      "p95Ms": 0.07266700000036508,
+      "categoryCounts": {
+        "POSSIBLY_HOUSE": 1412,
+        "UNKNOWN": 476,
+        "DEFINITELY_HOUSE": 95,
+        "NOT_HOUSE": 17
+      }
+    }
+  },
+  "peakEvaluationRssBytes": 247709696,
+  "limitations": [
+    "UNKNOWN remains reviewable, so retention recall can trivially be 100%; assess automatic recall, review burden, and review precision together.",
+    "Only the independently labeled subset supports precision/recall; unreviewed remixes and emerging-style cases are retained but not invented as gold.",
+    "Performance batch is catalog-derived and no pressing IDs are supplied. It measures lookup throughput, not classification accuracy or full-catalog coverage.",
+    "Same source and metadata queries for both methods; cache, ordering and host load are uncontrolled. Timings are observations, not a latency guarantee.",
+    "A single fresh set is small; no rules were retuned after reading its results."
+  ],
+  "rows": [
+    {
+      "id": "fresh-01",
+      "group": "mainstream",
+      "gold": "house",
+      "baseline": {
+        "category": "POSSIBLY_HOUSE",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 55,
+        "origin": "track",
+        "matchedGroups": 2,
+        "houseEvidence": true,
+        "nonHouseEvidence": true,
+        "conflictingEvidence": true,
+        "tags": [
+          "Electronic",
+          "House",
+          "French House",
+          "Electro House",
+          "Techno",
+          "Electro",
+          "Tech House",
+          "Disco",
+          "Trance"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 37,
+            "sourceReleaseObservations": 68,
+            "releaseIds": [
+              "discogs:release:2239144",
+              "discogs:release:6423656",
+              "discogs:release:1941058"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 18,
+            "sourceReleaseObservations": 122,
+            "releaseIds": [
+              "discogs:release:15390915",
+              "discogs:release:11842297",
+              "discogs:release:13291519"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.8772635814889336,
+          "coverage": 0.6622251832111925,
+          "sampleSize": 1501,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 1,
+          "reason": "Conflicting track-specific house evidence"
+        },
+        "explanation": [
+          "2 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "House and non-house evidence conflict; all ambiguous evidence remains reviewable.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Daft Punk",
+        "title": "Burnin'",
+        "durationMs": 413000
+      },
+      "reference": "https://en.wikipedia.org/wiki/Burnin%27_(Daft_Punk_song)"
+    },
+    {
+      "id": "fresh-02",
+      "group": "mainstream",
+      "gold": "house",
+      "baseline": {
+        "category": "POSSIBLY_HOUSE",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 55,
+        "origin": "track",
+        "matchedGroups": 2,
+        "houseEvidence": true,
+        "nonHouseEvidence": true,
+        "conflictingEvidence": true,
+        "tags": [
+          "Electronic",
+          "House",
+          "Techno",
+          "Tribal House",
+          "Hip Hop",
+          "Disco",
+          "Euro House",
+          "Pop",
+          "Tech House",
+          "Electro"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 37,
+            "sourceReleaseObservations": 70,
+            "releaseIds": [
+              "discogs:release:18842731",
+              "discogs:release:5659168",
+              "discogs:release:7875525"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 21,
+            "sourceReleaseObservations": 147,
+            "releaseIds": [
+              "discogs:release:11842297",
+              "discogs:release:13291519",
+              "discogs:release:12662091"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.8772635814889336,
+          "coverage": 0.6622251832111925,
+          "sampleSize": 1501,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 1,
+          "reason": "Conflicting track-specific house evidence"
+        },
+        "explanation": [
+          "2 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "House and non-house evidence conflict; all ambiguous evidence remains reviewable.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Daft Punk",
+        "title": "Revolution 909",
+        "durationMs": 324000
+      },
+      "reference": "https://en.wikipedia.org/wiki/Revolution_909"
+    },
+    {
+      "id": "fresh-03",
+      "group": "mainstream",
+      "gold": "house",
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 55,
+        "origin": "track",
+        "matchedGroups": 4,
+        "houseEvidence": true,
+        "nonHouseEvidence": true,
+        "conflictingEvidence": true,
+        "tags": [
+          "Electronic",
+          "Hip Hop",
+          "Disco",
+          "Euro House",
+          "Pop",
+          "House",
+          "UK Garage",
+          "Electro",
+          "Garage House",
+          "Dance-pop",
+          "Synth-pop"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 64,
+            "sourceReleaseObservations": 76,
+            "releaseIds": [
+              "discogs:release:10181838",
+              "discogs:release:9418333",
+              "discogs:release:7582826"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 4,
+            "sourceReleaseObservations": 4,
+            "releaseIds": [
+              "discogs:release:8985351",
+              "discogs:release:4820566",
+              "discogs:release:25958284"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 35,
+            "sourceReleaseObservations": 64,
+            "releaseIds": [
+              "discogs:release:4814279",
+              "discogs:release:4516848",
+              "discogs:release:4078875"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:7697952"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.7610294117647058,
+          "coverage": 0.7771428571428571,
+          "sampleSize": 350,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 1,
+          "reason": "Conflicting track-specific house evidence"
+        },
+        "explanation": [
+          "4 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "House and non-house evidence conflict; all ambiguous evidence remains reviewable.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Disclosure",
+        "title": "Latch",
+        "durationMs": 256000
+      },
+      "reference": "https://en.wikipedia.org/wiki/Latch_(song)"
+    },
+    {
+      "id": "fresh-04",
+      "group": "mainstream",
+      "gold": null,
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 55,
+        "origin": "track",
+        "matchedGroups": 3,
+        "houseEvidence": true,
+        "nonHouseEvidence": true,
+        "conflictingEvidence": true,
+        "tags": [
+          "Electronic",
+          "Garage House",
+          "Hip Hop",
+          "Electro",
+          "Rock",
+          "Pop",
+          "Dance-pop",
+          "House",
+          "UK Garage"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 12,
+            "sourceReleaseObservations": 22,
+            "releaseIds": [
+              "discogs:release:5174305",
+              "discogs:release:8312103",
+              "discogs:release:13183611"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 2,
+            "releaseIds": [
+              "discogs:release:12283477"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 7,
+            "sourceReleaseObservations": 28,
+            "releaseIds": [
+              "discogs:release:5226027",
+              "discogs:release:10282950",
+              "discogs:release:4980206"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.7610294117647058,
+          "coverage": 0.7771428571428571,
+          "sampleSize": 350,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 1,
+          "reason": "Conflicting track-specific house evidence"
+        },
+        "explanation": [
+          "3 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "House and non-house evidence conflict; all ambiguous evidence remains reviewable.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Disclosure",
+        "title": "When A Fire Starts To Burn"
+      },
+      "reference": "https://en.wikipedia.org/wiki/When_a_Fire_Starts_to_Burn"
+    },
+    {
+      "id": "fresh-05",
+      "group": "underground",
+      "gold": null,
+      "baseline": {
+        "category": "POSSIBLY_HOUSE",
+        "review": true
+      },
+      "result": {
+        "category": "DEFINITELY_HOUSE",
+        "confidence": 90,
+        "origin": "track",
+        "matchedGroups": 1,
+        "houseEvidence": true,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [
+          "Electronic",
+          "Tech House",
+          "House",
+          "Techno"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 2,
+            "sourceReleaseObservations": 2,
+            "releaseIds": [
+              "discogs:release:19589575",
+              "discogs:release:20847436"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.5740740740740741,
+          "coverage": 0.9,
+          "sampleSize": 60,
+          "kind": "mixed_house"
+        },
+        "review": {
+          "required": false,
+          "priority": null,
+          "reason": "Automatic decision; available for inspection"
+        },
+        "explanation": [
+          "1 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "KETTAMA",
+        "title": "Higher (Steel City Power House)"
+      },
+      "reference": "https://steelcitydancediscs.bandcamp.com/"
+    },
+    {
+      "id": "fresh-06",
+      "group": "underground",
+      "gold": "house",
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 35,
+        "origin": "artist",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 0.32558139534883723,
+          "coverage": 0.8657718120805369,
+          "sampleSize": 149,
+          "kind": "mixed_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 3,
+          "reason": "Mixed discography with meaningful house support"
+        },
+        "explanation": [
+          "Artist affinity prioritizes review; it cannot prove this recording is house.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Prospa",
+        "title": "This Rhythm"
+      },
+      "reference": "https://moonlvnding.com/music/prospa-produces-another-winner-with-this-rhythm/"
+    },
+    {
+      "id": "fresh-07",
+      "group": "underground",
+      "gold": "house",
+      "baseline": {
+        "category": "POSSIBLY_HOUSE",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 65,
+        "origin": "track",
+        "matchedGroups": 2,
+        "houseEvidence": true,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [
+          "Electronic",
+          "House",
+          "Electro",
+          "Garage House",
+          "Breaks",
+          "Trance",
+          "Tech House",
+          "Deep House"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 3,
+            "releaseIds": [
+              "discogs:release:20108173"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 4,
+            "sourceReleaseObservations": 6,
+            "releaseIds": [
+              "discogs:release:23390159",
+              "discogs:release:22944377",
+              "discogs:release:20104282"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.9782608695652174,
+          "coverage": 0.9019607843137255,
+          "sampleSize": 102,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 3,
+          "reason": "Mixed discography with meaningful house support"
+        },
+        "explanation": [
+          "2 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "DJ Seinfeld",
+        "title": "These Things Will Come To Be"
+      },
+      "reference": "https://stereogum.com/2154878/dj-seinfeld-these-things-will-come-to-be/music"
+    },
+    {
+      "id": "fresh-08",
+      "group": "underground",
+      "gold": null,
+      "baseline": {
+        "category": "POSSIBLY_HOUSE",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 65,
+        "origin": "track",
+        "matchedGroups": 1,
+        "houseEvidence": true,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [
+          "Electronic",
+          "House",
+          "Deep House",
+          "IDM",
+          "Downtempo",
+          "UK Garage"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 2,
+            "sourceReleaseObservations": 9,
+            "releaseIds": [
+              "discogs:release:20608021",
+              "discogs:release:20785444"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.9655172413793104,
+          "coverage": 0.9830508474576272,
+          "sampleSize": 59,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 3,
+          "reason": "Mixed discography with meaningful house support"
+        },
+        "explanation": [
+          "1 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Ross From Friends",
+        "title": "The Daisy"
+      },
+      "reference": "https://rossfromfriends.bandcamp.com/"
+    },
+    {
+      "id": "fresh-09",
+      "group": "recent",
+      "gold": "house",
+      "baseline": {
+        "category": "POSSIBLY_HOUSE",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 35,
+        "origin": "artist",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 0.5740740740740741,
+          "coverage": 0.9,
+          "sampleSize": 60,
+          "kind": "mixed_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 3,
+          "reason": "Mixed discography with meaningful house support"
+        },
+        "explanation": [
+          "Artist affinity prioritizes review; it cannot prove this recording is house.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "KETTAMA",
+        "title": "Think Of You"
+      },
+      "reference": "https://www.guettapen.com/2026/10/10/think-of-you-de-kettama-prospa-lun-des-titres-de-lannee/"
+    },
+    {
+      "id": "fresh-10",
+      "group": "recent",
+      "gold": null,
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 55,
+        "origin": "artist",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 0.9565217391304348,
+          "coverage": 0.9583333333333334,
+          "sampleSize": 96,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 2,
+          "reason": "Unrecognized recording from a predominantly house artist"
+        },
+        "explanation": [
+          "Artist affinity prioritizes review; it cannot prove this recording is house.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Josh Baker",
+        "title": "Souvenir"
+      },
+      "reference": "https://theidlibrary.com/artist?n=Josh+Baker"
+    },
+    {
+      "id": "fresh-11",
+      "group": "recent",
+      "gold": "house",
+      "baseline": {
+        "category": "DEFINITELY_HOUSE",
+        "review": false
+      },
+      "result": {
+        "category": "DEFINITELY_HOUSE",
+        "confidence": 90,
+        "origin": "track",
+        "matchedGroups": 1,
+        "houseEvidence": true,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [
+          "Electronic",
+          "House"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:35821474"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 1,
+          "coverage": 0.4,
+          "sampleSize": 5,
+          "kind": "mixed_house"
+        },
+        "review": {
+          "required": false,
+          "priority": null,
+          "reason": "Automatic decision; available for inspection"
+        },
+        "explanation": [
+          "1 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Jonas Blue",
+        "title": "Edge Of Desire (Franky Rizardo Extended Remix)",
+        "durationMs": 300000
+      },
+      "reference": "https://www.traxsource.com/artist/12191/franky-rizardo/top"
+    },
+    {
+      "id": "fresh-12",
+      "group": "recent",
+      "gold": null,
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "DEFINITELY_HOUSE",
+        "confidence": 90,
+        "origin": "track",
+        "matchedGroups": 2,
+        "houseEvidence": true,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [
+          "Electronic",
+          "House",
+          "Tech House"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:37105158"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:36254266"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.9565217391304348,
+          "coverage": 0.9583333333333334,
+          "sampleSize": 96,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": false,
+          "priority": null,
+          "reason": "Automatic decision; available for inspection"
+        },
+        "explanation": [
+          "2 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Josh Baker",
+        "title": "Feel This Way"
+      },
+      "reference": "https://theidlibrary.com/artist?n=Josh+Baker"
+    },
+    {
+      "id": "fresh-13",
+      "group": "niche",
+      "gold": "house",
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": null,
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "DJ BORING",
+        "title": "Winona"
+      },
+      "reference": "https://www.musicradar.com/news/dj-boring-interview"
+    },
+    {
+      "id": "fresh-14",
+      "group": "niche",
+      "gold": "house",
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": null,
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Palms Trax",
+        "title": "Equation"
+      },
+      "reference": "https://pitchfork.com/reviews/tracks/16095-palms-trax-equation/"
+    },
+    {
+      "id": "fresh-15",
+      "group": "niche",
+      "gold": null,
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": null,
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "DJ Poolboi",
+        "title": "Like We Were The Last Two People On Earth"
+      },
+      "reference": "https://djpoolboi.bandcamp.com/"
+    },
+    {
+      "id": "fresh-16",
+      "group": "niche",
+      "gold": null,
+      "baseline": {
+        "category": "POSSIBLY_HOUSE",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 55,
+        "origin": "track",
+        "matchedGroups": 2,
+        "houseEvidence": true,
+        "nonHouseEvidence": true,
+        "conflictingEvidence": true,
+        "tags": [
+          "Electronic",
+          "House",
+          "Deep House",
+          "Ambient"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:12265529"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:10659852"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.9556962025316456,
+          "coverage": 0.9518072289156626,
+          "sampleSize": 166,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 1,
+          "reason": "Conflicting track-specific house evidence"
+        },
+        "explanation": [
+          "2 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "House and non-house evidence conflict; all ambiguous evidence remains reviewable.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Harrison BDP",
+        "title": "It's Foggy Outside"
+      },
+      "reference": "https://harrisonbdp.bandcamp.com/"
+    },
+    {
+      "id": "fresh-17",
+      "group": "rapper",
+      "gold": "house",
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 0,
+          "coverage": 0.9230769230769231,
+          "sampleSize": 13,
+          "kind": "predominantly_non_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 6,
+          "reason": "Unrecognized or weakly supported recording from a predominantly non-house artist"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Drake",
+        "title": "Massive",
+        "durationMs": 336000
+      },
+      "reference": "https://en.wikipedia.org/wiki/Massive_(song)"
+    },
+    {
+      "id": "fresh-18",
+      "group": "rapper",
+      "gold": "house",
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 0,
+          "coverage": 0.9230769230769231,
+          "sampleSize": 13,
+          "kind": "predominantly_non_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 6,
+          "reason": "Unrecognized or weakly supported recording from a predominantly non-house artist"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Drake",
+        "title": "Falling Back",
+        "durationMs": 265000
+      },
+      "reference": "https://en.wikipedia.org/wiki/Falling_Back_(song)"
+    },
+    {
+      "id": "fresh-19",
+      "group": "rapper",
+      "gold": "house",
+      "baseline": {
+        "category": "POSSIBLY_HOUSE",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 35,
+        "origin": "artist",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 0.5,
+          "coverage": 1,
+          "sampleSize": 4,
+          "kind": "mixed_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 3,
+          "reason": "Mixed discography with meaningful house support"
+        },
+        "explanation": [
+          "Artist affinity prioritizes review; it cannot prove this recording is house.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Skepta",
+        "title": "Can't Play Myself (A Tribute To Amy)"
+      },
+      "reference": "https://www.thefader.com/2023/10/13/skepta-samples-amy-winehouse-on-cant-play-myself-tribute-to-amy"
+    },
+    {
+      "id": "fresh-20",
+      "group": "rapper",
+      "gold": "non_house",
+      "baseline": {
+        "category": "POSSIBLY_HOUSE",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 35,
+        "origin": "artist",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 0.5,
+          "coverage": 1,
+          "sampleSize": 4,
+          "kind": "mixed_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 3,
+          "reason": "Mixed discography with meaningful house support"
+        },
+        "explanation": [
+          "Artist affinity prioritizes review; it cannot prove this recording is house.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Skepta",
+        "title": "Shutdown",
+        "durationMs": 188000
+      },
+      "reference": "https://en.wikipedia.org/wiki/Shutdown_(Skepta_song)"
+    },
+    {
+      "id": "fresh-21",
+      "group": "mixed",
+      "gold": "house",
+      "baseline": {
+        "category": "POSSIBLY_HOUSE",
+        "review": true
+      },
+      "result": {
+        "category": "DEFINITELY_HOUSE",
+        "confidence": 90,
+        "origin": "track",
+        "matchedGroups": 3,
+        "houseEvidence": true,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [
+          "Electronic",
+          "House",
+          "Deep House",
+          "UK Garage",
+          "Garage House",
+          "Breakbeat"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 2,
+            "sourceReleaseObservations": 4,
+            "releaseIds": [
+              "discogs:release:25455196",
+              "discogs:release:30485699"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 3,
+            "sourceReleaseObservations": 8,
+            "releaseIds": [
+              "discogs:release:25031917",
+              "discogs:release:24966448",
+              "discogs:release:25059847"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:24961471"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.9068627450980392,
+          "coverage": 0.9066666666666666,
+          "sampleSize": 225,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": false,
+          "priority": null,
+          "reason": "Automatic decision; available for inspection"
+        },
+        "explanation": [
+          "3 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Fred again..",
+        "title": "Delilah (Pull Me Out Of This)"
+      },
+      "reference": "https://themusic.com.au/news/fred-again-new-single-delilah-pull-me-out-this/cpduZGdmaWg/18-10-22"
+    },
+    {
+      "id": "fresh-22",
+      "group": "mixed",
+      "gold": null,
+      "baseline": {
+        "category": "POSSIBLY_HOUSE",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 55,
+        "origin": "track",
+        "matchedGroups": 2,
+        "houseEvidence": true,
+        "nonHouseEvidence": true,
+        "conflictingEvidence": true,
+        "tags": [
+          "Electronic",
+          "House",
+          "Pop",
+          "Electro",
+          "Drum n Bass",
+          "UK Garage",
+          "Dubstep",
+          "Breaks"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 5,
+            "sourceReleaseObservations": 11,
+            "releaseIds": [
+              "discogs:release:26140661",
+              "discogs:release:23733617",
+              "discogs:release:25364596"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 3,
+            "releaseIds": [
+              "discogs:release:25664521"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.9068627450980392,
+          "coverage": 0.9066666666666666,
+          "sampleSize": 225,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 1,
+          "reason": "Conflicting track-specific house evidence"
+        },
+        "explanation": [
+          "2 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "House and non-house evidence conflict; all ambiguous evidence remains reviewable.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Fred again..",
+        "title": "Jungle"
+      },
+      "reference": "https://en.wikipedia.org/wiki/Jungle_(Fred_Again_song)"
+    },
+    {
+      "id": "fresh-23",
+      "group": "mixed",
+      "gold": null,
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 65,
+        "origin": "track",
+        "matchedGroups": 3,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [
+          "Electronic",
+          "UK Garage",
+          "Breakbeat",
+          "Techno"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:16777389"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:15372056"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:14676138"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.32558139534883723,
+          "coverage": 0.8657718120805369,
+          "sampleSize": 149,
+          "kind": "mixed_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 3,
+          "reason": "Mixed discography with meaningful house support"
+        },
+        "explanation": [
+          "3 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Prospa",
+        "title": "Control The Party"
+      },
+      "reference": "https://prospamusic.bandcamp.com/"
+    },
+    {
+      "id": "fresh-24",
+      "group": "mixed",
+      "gold": null,
+      "baseline": {
+        "category": "POSSIBLY_HOUSE",
+        "review": true
+      },
+      "result": {
+        "category": "DEFINITELY_HOUSE",
+        "confidence": 90,
+        "origin": "track",
+        "matchedGroups": 1,
+        "houseEvidence": true,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [
+          "Electronic",
+          "House",
+          "Techno"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:16469907"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.5740740740740741,
+          "coverage": 0.9,
+          "sampleSize": 60,
+          "kind": "mixed_house"
+        },
+        "review": {
+          "required": false,
+          "priority": null,
+          "reason": "Automatic decision; available for inspection"
+        },
+        "explanation": [
+          "1 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "KETTAMA",
+        "title": "Temperature Rising"
+      },
+      "reference": "https://kettama.bandcamp.com/"
+    },
+    {
+      "id": "fresh-25",
+      "group": "version",
+      "gold": null,
+      "baseline": {
+        "category": "POSSIBLY_HOUSE",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 65,
+        "origin": "track",
+        "matchedGroups": 1,
+        "houseEvidence": true,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [
+          "Electronic",
+          "House",
+          "Drum n Bass"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:29392168"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.32558139534883723,
+          "coverage": 0.8657718120805369,
+          "sampleSize": 149,
+          "kind": "mixed_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 3,
+          "reason": "Mixed discography with meaningful house support"
+        },
+        "explanation": [
+          "1 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Prospa",
+        "title": "WANT NEED LOVE (Dimension Remix)"
+      },
+      "reference": "https://prospamusic.bandcamp.com/"
+    },
+    {
+      "id": "fresh-26",
+      "group": "version",
+      "gold": null,
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 55,
+        "origin": "track",
+        "matchedGroups": 1,
+        "houseEvidence": true,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": true,
+        "tags": [
+          "Electronic",
+          "Breaks",
+          "House",
+          "Techno",
+          "Breakbeat",
+          "Tech House"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 3,
+            "sourceReleaseObservations": 3,
+            "releaseIds": [
+              "discogs:release:13365945",
+              "discogs:release:18389920",
+              "discogs:release:14420070"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.32558139534883723,
+          "coverage": 0.8657718120805369,
+          "sampleSize": 149,
+          "kind": "mixed_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 1,
+          "reason": "Conflicting track-specific house evidence"
+        },
+        "explanation": [
+          "1 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "House and non-house evidence conflict; all ambiguous evidence remains reviewable.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Prospa",
+        "title": "Prayer (DJ Seinfeld Remix)"
+      },
+      "reference": "https://stressrecords.bandcamp.com/"
+    },
+    {
+      "id": "fresh-27",
+      "group": "version",
+      "gold": null,
+      "baseline": {
+        "category": "POSSIBLY_HOUSE",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 65,
+        "origin": "track",
+        "matchedGroups": 1,
+        "houseEvidence": true,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [
+          "Electronic",
+          "House",
+          "Electro",
+          "Drum n Bass",
+          "UK Garage",
+          "Dubstep",
+          "Breaks"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 3,
+            "sourceReleaseObservations": 4,
+            "releaseIds": [
+              "discogs:release:24972568",
+              "discogs:release:30946948",
+              "discogs:release:31453631"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.9068627450980392,
+          "coverage": 0.9066666666666666,
+          "sampleSize": 225,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 3,
+          "reason": "Mixed discography with meaningful house support"
+        },
+        "explanation": [
+          "1 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Fred again..",
+        "title": "Jungle (Rico Nasty Remix)"
+      },
+      "reference": "https://en.wikipedia.org/wiki/Jungle_(Fred_Again_song)"
+    },
+    {
+      "id": "fresh-28",
+      "group": "version",
+      "gold": null,
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 55,
+        "origin": "artist",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 0.7610294117647058,
+          "coverage": 0.7771428571428571,
+          "sampleSize": 350,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 2,
+          "reason": "Unrecognized recording from a predominantly house artist"
+        },
+        "explanation": [
+          "Artist affinity prioritizes review; it cannot prove this recording is house.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Disclosure",
+        "title": "Latch (DJ Premier Remix)"
+      },
+      "reference": "https://en.wikipedia.org/wiki/Latch_(song)"
+    },
+    {
+      "id": "fresh-29",
+      "group": "emerging",
+      "gold": null,
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": null,
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "BUNT.",
+        "title": "Clouds"
+      },
+      "reference": "https://en.wikipedia.org/wiki/Bunt_(DJ)"
+    },
+    {
+      "id": "fresh-30",
+      "group": "emerging",
+      "gold": null,
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 1,
+          "coverage": 1,
+          "sampleSize": 1,
+          "kind": "electronic"
+        },
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "salute",
+        "title": "Joy"
+      },
+      "reference": "https://saluteaut.bandcamp.com/"
+    },
+    {
+      "id": "fresh-31",
+      "group": "emerging",
+      "gold": null,
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": null,
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "ATRIP",
+        "title": "Rainbow"
+      },
+      "reference": "https://atrip.bandcamp.com/"
+    },
+    {
+      "id": "fresh-32",
+      "group": "emerging",
+      "gold": "house",
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": null,
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Barry Can't Swim",
+        "title": "Sunsleeper"
+      },
+      "reference": "https://www.rollingstone.co.uk/music/barry-cant-swim-london-roundhouse-live-review-when-will-we-land-37495/"
+    },
+    {
+      "id": "fresh-33",
+      "group": "adjacent",
+      "gold": null,
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 55,
+        "origin": "track",
+        "matchedGroups": 19,
+        "houseEvidence": true,
+        "nonHouseEvidence": true,
+        "conflictingEvidence": true,
+        "tags": [
+          "Electronic",
+          "Techno",
+          "House",
+          "Progressive House",
+          "Ambient",
+          "Tech House",
+          "Deep House",
+          "Trance",
+          "Electro",
+          "Breakbeat",
+          "Downtempo",
+          "Hard House"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 44,
+            "sourceReleaseObservations": 65,
+            "releaseIds": [
+              "discogs:release:8002617",
+              "discogs:release:29487361",
+              "discogs:release:11587229"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 5,
+            "releaseIds": [
+              "discogs:release:1034928"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 2,
+            "releaseIds": [
+              "discogs:release:11990066"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 2,
+            "releaseIds": [
+              "discogs:release:1310824"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 4,
+            "sourceReleaseObservations": 5,
+            "releaseIds": [
+              "discogs:release:9570589",
+              "discogs:release:2487838",
+              "discogs:release:876820"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 2,
+            "sourceReleaseObservations": 5,
+            "releaseIds": [
+              "discogs:release:1007691",
+              "discogs:release:109869"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:237392"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 2,
+            "sourceReleaseObservations": 3,
+            "releaseIds": [
+              "discogs:release:14201882",
+              "discogs:release:1127973"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 2,
+            "sourceReleaseObservations": 3,
+            "releaseIds": [
+              "discogs:release:7186777",
+              "discogs:release:11498017"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 3,
+            "sourceReleaseObservations": 3,
+            "releaseIds": [
+              "discogs:release:94331",
+              "discogs:release:157082",
+              "discogs:release:1609368"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 3,
+            "sourceReleaseObservations": 8,
+            "releaseIds": [
+              "discogs:release:607696",
+              "discogs:release:12587",
+              "discogs:release:5116397"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:23478"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:27837399"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:94680"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 4,
+            "sourceReleaseObservations": 7,
+            "releaseIds": [
+              "discogs:release:882185",
+              "discogs:release:21758104",
+              "discogs:release:633799"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:756898"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 48,
+            "sourceReleaseObservations": 123,
+            "releaseIds": [
+              "discogs:release:244036",
+              "discogs:release:198705",
+              "discogs:release:403747"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 3,
+            "sourceReleaseObservations": 4,
+            "releaseIds": [
+              "discogs:release:24824036",
+              "discogs:release:16111530",
+              "discogs:release:1219809"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:2397905"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.6503623188405797,
+          "coverage": 0.6789667896678967,
+          "sampleSize": 1626,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 1,
+          "reason": "Conflicting track-specific house evidence"
+        },
+        "explanation": [
+          "19 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "House and non-house evidence conflict; all ambiguous evidence remains reviewable.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Underworld",
+        "title": "Rez"
+      },
+      "reference": "https://en.wikipedia.org/wiki/Rez_(song)"
+    },
+    {
+      "id": "fresh-34",
+      "group": "adjacent",
+      "gold": null,
+      "baseline": {
+        "category": "POSSIBLY_HOUSE",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 35,
+        "origin": "artist",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 0.3333333333333333,
+          "coverage": 0.75,
+          "sampleSize": 16,
+          "kind": "mixed_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 3,
+          "reason": "Mixed discography with meaningful house support"
+        },
+        "explanation": [
+          "Artist affinity prioritizes review; it cannot prove this recording is house.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "The Chemical Brothers",
+        "title": "Hey Boy Hey Girl"
+      },
+      "reference": "https://en.wikipedia.org/wiki/Hey_Boy_Hey_Girl"
+    },
+    {
+      "id": "fresh-35",
+      "group": "adjacent",
+      "gold": "non_house",
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 55,
+        "origin": "artist",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 0.7142857142857143,
+          "coverage": 0.7777777777777778,
+          "sampleSize": 9,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 2,
+          "reason": "Unrecognized recording from a predominantly house artist"
+        },
+        "explanation": [
+          "Artist affinity prioritizes review; it cannot prove this recording is house.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Armin van Buuren",
+        "title": "Blah Blah Blah",
+        "durationMs": 184000
+      },
+      "reference": "https://en.wikipedia.org/wiki/Blah_Blah_Blah_(Armin_van_Buuren_song)"
+    },
+    {
+      "id": "fresh-36",
+      "group": "adjacent",
+      "gold": null,
+      "baseline": {
+        "category": "POSSIBLY_HOUSE",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 35,
+        "origin": "artist",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 0.3333333333333333,
+          "coverage": 0.8181818181818182,
+          "sampleSize": 11,
+          "kind": "mixed_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 3,
+          "reason": "Mixed discography with meaningful house support"
+        },
+        "explanation": [
+          "Artist affinity prioritizes review; it cannot prove this recording is house.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Chase & Status",
+        "title": "Baddadan"
+      },
+      "reference": "https://en.wikipedia.org/wiki/Baddadan"
+    },
+    {
+      "id": "fresh-37",
+      "group": "unrelated",
+      "gold": "non_house",
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 65,
+        "origin": "track",
+        "matchedGroups": 47,
+        "houseEvidence": false,
+        "nonHouseEvidence": true,
+        "conflictingEvidence": false,
+        "tags": [
+          "Rock",
+          "Pop",
+          "Pop Rock",
+          "Classical",
+          "Blues",
+          "Electronic",
+          "Jazz",
+          "Funk",
+          "Soul",
+          "Country",
+          "Acoustic"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 660,
+            "sourceReleaseObservations": 2381,
+            "releaseIds": [
+              "discogs:release:15949915",
+              "discogs:release:4997010",
+              "discogs:release:7767118"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 4,
+            "sourceReleaseObservations": 5,
+            "releaseIds": [
+              "discogs:release:13373595",
+              "discogs:release:13373446",
+              "discogs:release:4706251"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 4,
+            "sourceReleaseObservations": 6,
+            "releaseIds": [
+              "discogs:release:36988581",
+              "discogs:release:34539811",
+              "discogs:release:13373516"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 3,
+            "sourceReleaseObservations": 4,
+            "releaseIds": [
+              "discogs:release:13373595",
+              "discogs:release:13374465",
+              "discogs:release:13353455"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 4,
+            "sourceReleaseObservations": 4,
+            "releaseIds": [
+              "discogs:release:13373595",
+              "discogs:release:13373516",
+              "discogs:release:13374465"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 5,
+            "sourceReleaseObservations": 8,
+            "releaseIds": [
+              "discogs:release:13374564",
+              "discogs:release:36988581",
+              "discogs:release:34539811"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 4,
+            "sourceReleaseObservations": 5,
+            "releaseIds": [
+              "discogs:release:13353572",
+              "discogs:release:13373516",
+              "discogs:release:13373595"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 3,
+            "sourceReleaseObservations": 4,
+            "releaseIds": [
+              "discogs:release:13373516",
+              "discogs:release:13353637",
+              "discogs:release:13373446"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 6,
+            "sourceReleaseObservations": 7,
+            "releaseIds": [
+              "discogs:release:36988581",
+              "discogs:release:34539811",
+              "discogs:release:13373516"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 3,
+            "sourceReleaseObservations": 4,
+            "releaseIds": [
+              "discogs:release:13373516",
+              "discogs:release:13373750",
+              "discogs:release:13374465"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 4,
+            "sourceReleaseObservations": 5,
+            "releaseIds": [
+              "discogs:release:36988581",
+              "discogs:release:34539811",
+              "discogs:release:13353572"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 4,
+            "sourceReleaseObservations": 6,
+            "releaseIds": [
+              "discogs:release:13373750",
+              "discogs:release:13373446",
+              "discogs:release:13373516"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 4,
+            "sourceReleaseObservations": 7,
+            "releaseIds": [
+              "discogs:release:13353637",
+              "discogs:release:13373378",
+              "discogs:release:13373595"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 5,
+            "sourceReleaseObservations": 5,
+            "releaseIds": [
+              "discogs:release:13353572",
+              "discogs:release:34827095",
+              "discogs:release:13373516"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 8,
+            "sourceReleaseObservations": 8,
+            "releaseIds": [
+              "discogs:release:13373516",
+              "discogs:release:13373750",
+              "discogs:release:27557949"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 7,
+            "sourceReleaseObservations": 10,
+            "releaseIds": [
+              "discogs:release:4939029",
+              "discogs:release:13373446",
+              "discogs:release:13369775"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 2,
+            "sourceReleaseObservations": 2,
+            "releaseIds": [
+              "discogs:release:13353637",
+              "discogs:release:13374564"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 2,
+            "sourceReleaseObservations": 2,
+            "releaseIds": [
+              "discogs:release:13350060",
+              "discogs:release:13373750"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 3,
+            "sourceReleaseObservations": 3,
+            "releaseIds": [
+              "discogs:release:7612841",
+              "discogs:release:4800851",
+              "discogs:release:13373516"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 8,
+            "sourceReleaseObservations": 8,
+            "releaseIds": [
+              "discogs:release:13373750",
+              "discogs:release:13353637",
+              "discogs:release:13842905"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 42,
+            "sourceReleaseObservations": 188,
+            "releaseIds": [
+              "discogs:release:15044118",
+              "discogs:release:13353637",
+              "discogs:release:27557949"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 87,
+            "sourceReleaseObservations": 561,
+            "releaseIds": [
+              "discogs:release:14476373",
+              "discogs:release:11794360",
+              "discogs:release:8524903"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 91,
+            "sourceReleaseObservations": 763,
+            "releaseIds": [
+              "discogs:release:13373516",
+              "discogs:release:13373750",
+              "discogs:release:13471092"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 14,
+            "sourceReleaseObservations": 26,
+            "releaseIds": [
+              "discogs:release:13373750",
+              "discogs:release:26278241",
+              "discogs:release:20163721"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 6,
+            "sourceReleaseObservations": 7,
+            "releaseIds": [
+              "discogs:release:13471092",
+              "discogs:release:2387496",
+              "discogs:release:33431870"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 5,
+            "sourceReleaseObservations": 17,
+            "releaseIds": [
+              "discogs:release:13373446",
+              "discogs:release:13373516",
+              "discogs:release:9657569"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 4,
+            "sourceReleaseObservations": 7,
+            "releaseIds": [
+              "discogs:release:13374564",
+              "discogs:release:14863961",
+              "discogs:release:13373446"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 3,
+            "sourceReleaseObservations": 4,
+            "releaseIds": [
+              "discogs:release:2322313",
+              "discogs:release:12383901",
+              "discogs:release:14533150"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 6,
+            "sourceReleaseObservations": 6,
+            "releaseIds": [
+              "discogs:release:38033454",
+              "discogs:release:13374564",
+              "discogs:release:13373595"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 3,
+            "sourceReleaseObservations": 3,
+            "releaseIds": [
+              "discogs:release:27990099",
+              "discogs:release:14533150",
+              "discogs:release:13374465"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:13350060"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 4,
+            "sourceReleaseObservations": 4,
+            "releaseIds": [
+              "discogs:release:14533150",
+              "discogs:release:13374465",
+              "discogs:release:36988581"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:13353637"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:13373446"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 3,
+            "sourceReleaseObservations": 3,
+            "releaseIds": [
+              "discogs:release:13353572",
+              "discogs:release:4939029",
+              "discogs:release:14533150"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:14533150"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:14533150"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:13350060"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:13373446"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:13373516"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:16292997"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:13353572"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:13373446"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:13353637"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:12086080"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:10200752"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 2,
+            "releaseIds": [
+              "discogs:release:17961328"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.0009393493440210414,
+          "coverage": 0.6692721976571178,
+          "sampleSize": 47719,
+          "kind": "predominantly_non_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 4,
+          "reason": "Weaker house or adjacent electronic evidence"
+        },
+        "explanation": [
+          "47 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "The Beatles",
+        "title": "Let It Be"
+      },
+      "reference": "https://en.wikipedia.org/wiki/Let_It_Be_(song)"
+    },
+    {
+      "id": "fresh-38",
+      "group": "unrelated",
+      "gold": "non_house",
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 55,
+        "origin": "track",
+        "matchedGroups": 4,
+        "houseEvidence": true,
+        "nonHouseEvidence": true,
+        "conflictingEvidence": true,
+        "tags": [
+          "Rock",
+          "Hard Rock",
+          "Hip Hop",
+          "Pop",
+          "Pop Rock",
+          "Electronic",
+          "Techno",
+          "Big Beat",
+          "House",
+          "Electro",
+          "Alternative Rock",
+          "Blues"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1189,
+            "sourceReleaseObservations": 3110,
+            "releaseIds": [
+              "discogs:release:21827629",
+              "discogs:release:23445059",
+              "discogs:release:5305584"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 11,
+            "sourceReleaseObservations": 11,
+            "releaseIds": [
+              "discogs:release:16435494",
+              "discogs:release:10738986",
+              "discogs:release:14167527"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 237,
+            "sourceReleaseObservations": 1213,
+            "releaseIds": [
+              "discogs:release:12232985",
+              "discogs:release:26154227",
+              "discogs:release:20179924"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 19,
+            "sourceReleaseObservations": 79,
+            "releaseIds": [
+              "discogs:release:13895839",
+              "discogs:release:4068941",
+              "discogs:release:26254556"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.01398097434419141,
+          "coverage": 0.7298548285293499,
+          "sampleSize": 9506,
+          "kind": "predominantly_non_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 1,
+          "reason": "Conflicting track-specific house evidence"
+        },
+        "explanation": [
+          "4 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "House and non-house evidence conflict; all ambiguous evidence remains reviewable.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Queen",
+        "title": "We Will Rock You",
+        "durationMs": 122000
+      },
+      "reference": "https://en.wikipedia.org/wiki/We_Will_Rock_You"
+    },
+    {
+      "id": "fresh-39",
+      "group": "unrelated",
+      "gold": "non_house",
+      "baseline": {
+        "category": "POSSIBLY_HOUSE",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 65,
+        "origin": "track",
+        "matchedGroups": 4,
+        "houseEvidence": false,
+        "nonHouseEvidence": true,
+        "conflictingEvidence": false,
+        "tags": [
+          "Rock",
+          "Heavy Metal",
+          "Hard Rock",
+          "Acoustic",
+          "Pop",
+          "Country",
+          "Pop Rock",
+          "Alternative Rock",
+          "Classical",
+          "Hip Hop",
+          "Electronic",
+          "Synth-pop"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 809,
+            "sourceReleaseObservations": 1683,
+            "releaseIds": [
+              "discogs:release:12197380",
+              "discogs:release:12198528",
+              "discogs:release:33206760"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 93,
+            "sourceReleaseObservations": 192,
+            "releaseIds": [
+              "discogs:release:12403542",
+              "discogs:release:23655311",
+              "discogs:release:8961575"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 180,
+            "sourceReleaseObservations": 739,
+            "releaseIds": [
+              "discogs:release:6828433",
+              "discogs:release:8119080",
+              "discogs:release:13176684"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 32,
+            "sourceReleaseObservations": 72,
+            "releaseIds": [
+              "discogs:release:11000665",
+              "discogs:release:11190624",
+              "discogs:release:12481540"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.003629764065335753,
+          "coverage": 0.7722494744218641,
+          "sampleSize": 5708,
+          "kind": "predominantly_non_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 4,
+          "reason": "Weaker house or adjacent electronic evidence"
+        },
+        "explanation": [
+          "4 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Metallica",
+        "title": "Nothing Else Matters",
+        "durationMs": 388000
+      },
+      "reference": "https://en.wikipedia.org/wiki/Nothing_Else_Matters"
+    },
+    {
+      "id": "fresh-40",
+      "group": "unrelated",
+      "gold": "non_house",
+      "baseline": {
+        "category": "UNKNOWN",
+        "review": true
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 65,
+        "origin": "track",
+        "matchedGroups": 2,
+        "houseEvidence": false,
+        "nonHouseEvidence": true,
+        "conflictingEvidence": false,
+        "tags": [
+          "Electro",
+          "Downtempo",
+          "Synth-pop",
+          "Pop",
+          "Electronic",
+          "Rock",
+          "Dance-pop",
+          "Pop Rock",
+          "Folk",
+          "Country"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 17,
+            "sourceReleaseObservations": 40,
+            "releaseIds": [
+              "discogs:release:25285696",
+              "discogs:release:29904592",
+              "discogs:release:30004753"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 13,
+            "sourceReleaseObservations": 61,
+            "releaseIds": [
+              "discogs:release:27939741",
+              "discogs:release:25748779",
+              "discogs:release:25071307"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.06866485013623978,
+          "coverage": 0.8538855281526291,
+          "sampleSize": 2149,
+          "kind": "mixed_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 3,
+          "reason": "Mixed discography with meaningful house support"
+        },
+        "explanation": [
+          "2 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "query": {
+        "artist": "Taylor Swift",
+        "title": "Anti-Hero",
+        "durationMs": 200000
+      },
+      "reference": "https://en.wikipedia.org/wiki/Anti-Hero_(song)"
+    }
+  ]
+}
