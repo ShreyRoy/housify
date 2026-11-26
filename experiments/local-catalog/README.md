@@ -1,6 +1,6 @@
 # Local genre catalog: research and isolated proof of concept
 
-The follow-up [Discogs implementation experiment](discogs/README.md) adds a real bulk importer and revised contextual policy. This document preserves the earlier research findings and measurements; current experimental code has since evolved. Production remains separate.
+The follow-up [Discogs implementation experiment](discogs/README.md) adds a real bulk importer and revised contextual policy. This document preserves the earlier research findings and measurements; current experimental code has since evolved. Production remains separate. The subsequent [genre-first expansion](expanded/README.md) preserves the recall-first rules and broadens the local source; its source import, compact index and comparative evaluation are complete. See the [measured expansion report](expanded/REPORT.md).
 
 Research date: **24 November 2026**. Production functionality is unchanged. Nothing in this directory is imported by an application route or component. No Spotify requests, playlist exports, audio, credentials, ML models or paid services were used. The optional collection scripts make public metadata requests; the classifier and evaluation run entirely offline.
 

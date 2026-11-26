@@ -15,9 +15,16 @@ const start=performance.now(),source=new DatabaseSync(sourcePath,{readOnly:true}
 if(source.prepare("SELECT status FROM import_state").get()?.status!=="complete")throw new Error("Source import must be complete");
 source.exec("PRAGMA cache_size=-32768; PRAGMA temp_store=FILE");
 out.exec(readFileSync(new URL("./schema.sql",import.meta.url),"utf8"));
-source.function("rf_base",{deterministic:true},value=>recordingParts(String(value)).base);
-source.function("rf_version",{deterministic:true},value=>recordingParts(String(value)).version);
-source.function("rf_name",{deterministic:true},value=>normalizeName(String(value)));
+// The same title is parsed for both base and version, often across many
+// pressings. Cache exact pure-helper results only; no matching/scoring changes.
+function boundedMemo<T>(compute:(value:string)=>T){
+  const cache=new Map<string,T>();
+  return (value:string):T=>{const old=cache.get(value);if(old!==undefined)return old;const result=compute(value);if(cache.size>=50000)cache.clear();cache.set(value,result);return result;};
+}
+const cachedParts=boundedMemo(recordingParts),cachedName=boundedMemo(normalizeName);
+source.function("rf_base",{deterministic:true},value=>cachedParts(String(value)).base);
+source.function("rf_version",{deterministic:true},value=>cachedParts(String(value)).version);
+source.function("rf_name",{deterministic:true},value=>cachedName(String(value)));
 source.exec("CREATE TEMP TABLE families(id INTEGER PRIMARY KEY,family TEXT); CREATE TEMP TABLE artist_keys(id TEXT PRIMARY KEY,name TEXT)");
 const familyInsert=source.prepare("INSERT INTO families VALUES(?,?)");
 for(const row of source.prepare("SELECT id,name FROM genres").iterate() as Iterable<{id:number;name:string}>)familyInsert.run(row.id,genreFamily(row.name));
@@ -90,10 +97,11 @@ out.exec("BEGIN");
 for(const row of source.prepare("SELECT * FROM units ORDER BY artist,title,version,duration").iterate() as Iterable<Unit>){const key=JSON.stringify([row.artist,row.title,row.version]);if(key!==lastKey){flush();lastKey=key;}group.push(row);}
 flush();endArtist();out.exec("COMMIT");
 const sourceScope=source.prepare("SELECT * FROM catalog_scope").get();
-const metadata={policy:POLICY,source:{path:sourcePath,bytes:statSync(sourcePath).size,scope:sourceScope,snapshots:source.prepare("SELECT id,url,license,version FROM sources").all()},semantics:"Consensus is genre evidence across logical releases; never pressing or exact-audio identity. Input artist-targeting cannot be undone by compaction."};
+const scopeLimitation=sourceScope?.scope==="artists"?"Source is inherited artist-targeted data; builder never reads benchmark names. Not an unbiased worldwide catalog.":sourceScope?.scope==="genre-first-two-pass"?"Source uses genre-first discovery and broader evidence for discovered artists. Profiles still describe a selected metadata sample, not complete discographies.":"Source is a bounded sample described by catalog_scope; no worldwide coverage or complete discographies are implied.";
+const metadata={policy:POLICY,source:{path:sourcePath,bytes:statSync(sourcePath).size,scope:sourceScope,snapshots:source.prepare("SELECT id,url,license,version FROM sources").all()},semantics:"Consensus is genre evidence across logical releases; never pressing or exact-audio identity. Source selection limitations cannot be undone by compaction."};
 for(const [key,value]of Object.entries(metadata))out.prepare("INSERT INTO metadata VALUES(?,?)").run(key,JSON.stringify(value));
 out.exec("ANALYZE");
 const artistRows=out.prepare("SELECT COUNT(*) AS n FROM artist_index").get()!.n;
 out.close();source.close();renameSync(temporary,output);
-const result={generatedAt:new Date().toISOString(),output,sourceBytes:statSync(sourcePath).size,databaseBytes:statSync(output).size,titleVersionGroups:groups,trackRows:retained,artistLookupRows:artistRows,omittedNonHouseGroups:omittedNonHouse,elapsedMs:performance.now()-start,peakRssBytes:process.resourceUsage().maxRSS*1024,sourceScope,limitations:"Source is inherited artist-targeted data; builder never reads benchmark names. Not an unbiased worldwide catalog. Negative title/version reservoir capped after full mixed-profile computation; house/adjacent title/version groups are not capped. Duration alternatives are retained together."};
+const result={generatedAt:new Date().toISOString(),output,sourceBytes:statSync(sourcePath).size,databaseBytes:statSync(output).size,titleVersionGroups:groups,trackRows:retained,artistLookupRows:artistRows,omittedNonHouseGroups:omittedNonHouse,elapsedMs:performance.now()-start,peakRssBytes:process.resourceUsage().maxRSS*1024,sourceScope,limitations:scopeLimitation+" Negative title/version reservoir capped after full mixed-profile computation; house/adjacent title/version groups are not capped. Duration alternatives are retained together."};
 writeFileSync(output+".build.json",JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));

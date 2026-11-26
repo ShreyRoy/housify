@@ -3,3 +3,6 @@ results/*.sqlite-*
 discogs/artifacts/
 discogs/__pycache__/
 recall-first/artifacts/
+
+expanded/artifacts/
+expanded/__pycache__/
