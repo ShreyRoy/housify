@@ -1,0 +1,1417 @@
+{
+  "archiveReleasesScanned": 19575942,
+  "limitation": "Exact normalized titles/credit names, not an exhaustive audio/alias search. Durations use an observed archive value; direct comparison evaluation retains its original frozen queries.",
+  "probes": [
+    {
+      "artist": "Drake",
+      "title": "Massive",
+      "matches": [
+        {
+          "releaseId": "23602511",
+          "releaseTitle": "Honestly, Nevermind",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Massive",
+          "durationMs": 336000,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "FLAC",
+            "Album"
+          ]
+        },
+        {
+          "releaseId": "23614448",
+          "releaseTitle": "Honestly, Nevermind",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Massive",
+          "durationMs": 336000,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "MP3",
+            "Album"
+          ]
+        },
+        {
+          "releaseId": "23614550",
+          "releaseTitle": "Honestly, Nevermind",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Massive",
+          "durationMs": 336000,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "AIFF",
+            "Album"
+          ]
+        },
+        {
+          "releaseId": "23638004",
+          "releaseTitle": "Honestly, Nevermind",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Massive",
+          "durationMs": 336000,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "AAC",
+            "Album"
+          ]
+        },
+        {
+          "releaseId": "24522254",
+          "releaseTitle": "Honestly, Nevermind",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Massive",
+          "durationMs": 336000,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "LP",
+            "Album",
+            "Unofficial Release"
+          ]
+        },
+        {
+          "releaseId": "25147018",
+          "releaseTitle": "Honestly, Nevermind ",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Massive ",
+          "durationMs": null,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "Unofficial Release"
+          ]
+        },
+        {
+          "releaseId": "25667146",
+          "releaseTitle": "Promo Only Mainstream Radio: August 2022",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Massive",
+          "durationMs": 336000,
+          "tags": [
+            "Hip Hop",
+            "Rock",
+            "Pop",
+            "Indie Rock",
+            "Electro"
+          ],
+          "formats": [
+            "Compilation",
+            "Promo",
+            "Stereo"
+          ]
+        },
+        {
+          "releaseId": "26050273",
+          "releaseTitle": "Honestly, Nevermind",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Massive",
+          "durationMs": 336000,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "Deep House",
+            "House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "LP",
+            "Album",
+            "Unofficial Release"
+          ]
+        },
+        {
+          "releaseId": "26458748",
+          "releaseTitle": "Honestly, Nevermind ",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Massive ",
+          "durationMs": 337000,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "Album",
+            "Stereo"
+          ]
+        },
+        {
+          "releaseId": "26527103",
+          "releaseTitle": "Honestly, Nevermind ",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Massive ",
+          "durationMs": 337000,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "Album"
+          ]
+        },
+        {
+          "releaseId": "26988885",
+          "releaseTitle": "Honestly, Nevermind",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Massive",
+          "durationMs": null,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "LP",
+            "Album",
+            "Unofficial Release"
+          ]
+        },
+        {
+          "releaseId": "30699493",
+          "releaseTitle": "Honestly, Nevermind",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Massive",
+          "durationMs": 336000,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "LP",
+            "Stereo"
+          ]
+        },
+        {
+          "releaseId": "36448806",
+          "releaseTitle": "Honestly, Nevermind",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Massive",
+          "durationMs": null,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "Dance-pop",
+            "Deep House",
+            "House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "LP",
+            "Album",
+            "Unofficial Release"
+          ]
+        }
+      ],
+      "query": {
+        "artist": "Drake",
+        "title": "Massive",
+        "durationMs": 336000
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 55,
+        "origin": "track",
+        "matchedGroups": 2,
+        "houseEvidence": true,
+        "nonHouseEvidence": true,
+        "conflictingEvidence": true,
+        "tags": [
+          "Electronic",
+          "Deep House",
+          "House",
+          "Hip Hop",
+          "Dance-pop"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 3,
+            "releaseIds": [
+              25147018
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 3,
+            "sourceReleaseObservations": 11,
+            "releaseIds": [
+              24049892,
+              23602511,
+              25667146
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.03355704697986577,
+          "coverage": 0.711217183770883,
+          "sampleSize": 1257,
+          "kind": "predominantly_non_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 1,
+          "reason": "Conflicting track-specific house evidence"
+        },
+        "explanation": [
+          "2 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "House and non-house evidence conflict; all ambiguous evidence remains reviewable.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "fullArchiveExactMatches": 13,
+      "uniqueSourceReleases": 13,
+      "retainedReleases": 13,
+      "genreEligibleReleases": 13,
+      "genreEligibleButMissingFromExtraction": [],
+      "assessment": "Source and compact matches retained; fixed conservative rules route genre conflicts/weakness to review"
+    },
+    {
+      "artist": "Drake",
+      "title": "Falling Back",
+      "matches": [
+        {
+          "releaseId": "23602511",
+          "releaseTitle": "Honestly, Nevermind",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Falling Back",
+          "durationMs": 266000,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "FLAC",
+            "Album"
+          ]
+        },
+        {
+          "releaseId": "23614448",
+          "releaseTitle": "Honestly, Nevermind",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Falling Back",
+          "durationMs": 266000,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "MP3",
+            "Album"
+          ]
+        },
+        {
+          "releaseId": "23614550",
+          "releaseTitle": "Honestly, Nevermind",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Falling Back",
+          "durationMs": 266000,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "AIFF",
+            "Album"
+          ]
+        },
+        {
+          "releaseId": "23638004",
+          "releaseTitle": "Honestly, Nevermind",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Falling Back",
+          "durationMs": 266000,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "AAC",
+            "Album"
+          ]
+        },
+        {
+          "releaseId": "24522254",
+          "releaseTitle": "Honestly, Nevermind",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Falling Back",
+          "durationMs": 266000,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "LP",
+            "Album",
+            "Unofficial Release"
+          ]
+        },
+        {
+          "releaseId": "25147018",
+          "releaseTitle": "Honestly, Nevermind ",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Falling Back ",
+          "durationMs": null,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "Unofficial Release"
+          ]
+        },
+        {
+          "releaseId": "26050273",
+          "releaseTitle": "Honestly, Nevermind",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Falling Back",
+          "durationMs": 266000,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "Deep House",
+            "House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "LP",
+            "Album",
+            "Unofficial Release"
+          ]
+        },
+        {
+          "releaseId": "26458748",
+          "releaseTitle": "Honestly, Nevermind ",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Falling Back ",
+          "durationMs": 266000,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "Album",
+            "Stereo"
+          ]
+        },
+        {
+          "releaseId": "26527103",
+          "releaseTitle": "Honestly, Nevermind ",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Falling Back ",
+          "durationMs": 266000,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "Album"
+          ]
+        },
+        {
+          "releaseId": "26988885",
+          "releaseTitle": "Honestly, Nevermind",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Falling Back",
+          "durationMs": null,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "LP",
+            "Album",
+            "Unofficial Release"
+          ]
+        },
+        {
+          "releaseId": "30699493",
+          "releaseTitle": "Honestly, Nevermind",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Falling Back",
+          "durationMs": 266000,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Deep House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "LP",
+            "Stereo"
+          ]
+        },
+        {
+          "releaseId": "36448806",
+          "releaseTitle": "Honestly, Nevermind",
+          "artistId": 151199,
+          "artist": "Drake",
+          "title": "Falling Back",
+          "durationMs": null,
+          "tags": [
+            "Electronic",
+            "Hip Hop",
+            "Dance-pop",
+            "Deep House",
+            "House",
+            "Pop Rap"
+          ],
+          "formats": [
+            "LP",
+            "Album",
+            "Unofficial Release"
+          ]
+        }
+      ],
+      "query": {
+        "artist": "Drake",
+        "title": "Falling Back",
+        "durationMs": 266000
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 55,
+        "origin": "track",
+        "matchedGroups": 2,
+        "houseEvidence": true,
+        "nonHouseEvidence": true,
+        "conflictingEvidence": true,
+        "tags": [
+          "Electronic",
+          "Deep House",
+          "House",
+          "Hip Hop",
+          "Dance-pop"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 3,
+            "releaseIds": [
+              25147018
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 9,
+            "releaseIds": [
+              23602511
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.03355704697986577,
+          "coverage": 0.711217183770883,
+          "sampleSize": 1257,
+          "kind": "predominantly_non_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 1,
+          "reason": "Conflicting track-specific house evidence"
+        },
+        "explanation": [
+          "2 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "House and non-house evidence conflict; all ambiguous evidence remains reviewable.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "fullArchiveExactMatches": 12,
+      "uniqueSourceReleases": 12,
+      "retainedReleases": 12,
+      "genreEligibleReleases": 12,
+      "genreEligibleButMissingFromExtraction": [],
+      "assessment": "Source and compact matches retained; fixed conservative rules route genre conflicts/weakness to review"
+    },
+    {
+      "artist": "DJ BORING",
+      "title": "Winona",
+      "matches": [
+        {
+          "releaseId": "9230648",
+          "releaseTitle": "Winona EP",
+          "artistId": 5328800,
+          "artist": "DJ Boring",
+          "title": "Winona",
+          "durationMs": 511000,
+          "tags": [
+            "Electronic",
+            "Deep House",
+            "Breakbeat"
+          ],
+          "formats": [
+            "12\"",
+            "45 RPM",
+            "EP"
+          ]
+        },
+        {
+          "releaseId": "10672483",
+          "releaseTitle": "In The House",
+          "artistId": 5328800,
+          "artist": "DJ Boring",
+          "title": "Winona",
+          "durationMs": 323000,
+          "tags": [
+            "Electronic",
+            "House",
+            "Deep House",
+            "Tech House"
+          ],
+          "formats": [
+            "Mixed"
+          ]
+        },
+        {
+          "releaseId": "10865797",
+          "releaseTitle": "Winona",
+          "artistId": 5328800,
+          "artist": "DJ Boring",
+          "title": "Winona",
+          "durationMs": 511000,
+          "tags": [
+            "Electronic",
+            "Deep House",
+            "Breakbeat"
+          ],
+          "formats": [
+            "MP3"
+          ]
+        },
+        {
+          "releaseId": "11341117",
+          "releaseTitle": "SETTINGS002",
+          "artistId": 5328800,
+          "artist": "DJ Boring",
+          "title": "Winona",
+          "durationMs": null,
+          "tags": [
+            "Electronic",
+            "House",
+            "Techno",
+            "Downtempo"
+          ],
+          "formats": [
+            "MP3",
+            "Mixed",
+            "Stereo"
+          ]
+        },
+        {
+          "releaseId": "14379785",
+          "releaseTitle": "Winona EP",
+          "artistId": 5328800,
+          "artist": "DJ Boring",
+          "title": "Winona",
+          "durationMs": 511000,
+          "tags": [
+            "Electronic",
+            "Deep House"
+          ],
+          "formats": [
+            "FLAC"
+          ]
+        },
+        {
+          "releaseId": "18377119",
+          "releaseTitle": "Winona EP",
+          "artistId": 5328800,
+          "artist": "DJ Boring",
+          "title": "Winona",
+          "durationMs": 511000,
+          "tags": [
+            "Electronic",
+            "Deep House",
+            "Acid",
+            "Breakbeat"
+          ],
+          "formats": [
+            "12\"",
+            "45 RPM",
+            "EP",
+            "Repress"
+          ]
+        },
+        {
+          "releaseId": "28839469",
+          "releaseTitle": "Winona EP",
+          "artistId": 5328800,
+          "artist": "DJ Boring",
+          "title": "Winona",
+          "durationMs": 511000,
+          "tags": [
+            "Electronic",
+            "Deep House",
+            "Acid",
+            "Breakbeat"
+          ],
+          "formats": [
+            "12\"",
+            "45 RPM",
+            "EP",
+            "Repress"
+          ]
+        },
+        {
+          "releaseId": "29220031",
+          "releaseTitle": "Deep LoFi House From Chicago Vol.2",
+          "artistId": 5328800,
+          "artist": "DJ Boring",
+          "title": "Winona",
+          "durationMs": null,
+          "tags": [
+            "Electronic",
+            "Deep House"
+          ],
+          "formats": [
+            "Compilation",
+            "Mixed",
+            "Stereo"
+          ]
+        },
+        {
+          "releaseId": "35003708",
+          "releaseTitle": "The Best Of LoFi House vol.1",
+          "artistId": 5328800,
+          "artist": "DJ Boring",
+          "title": "Winona",
+          "durationMs": null,
+          "tags": [
+            "Electronic",
+            "Deep House"
+          ],
+          "formats": [
+            "Compilation",
+            "Stereo"
+          ]
+        }
+      ],
+      "query": {
+        "artist": "DJ BORING",
+        "title": "Winona",
+        "durationMs": 511000
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 65,
+        "origin": "track",
+        "matchedGroups": 2,
+        "houseEvidence": true,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [
+          "Electronic",
+          "Deep House",
+          "Breakbeat"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 3,
+            "sourceReleaseObservations": 3,
+            "releaseIds": [
+              29220031,
+              11341117,
+              35003708
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 2,
+            "sourceReleaseObservations": 5,
+            "releaseIds": [
+              9230648,
+              10865797
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 1,
+          "coverage": 0.8571428571428571,
+          "sampleSize": 35,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 3,
+          "reason": "Mixed discography with meaningful house support"
+        },
+        "explanation": [
+          "2 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "fullArchiveExactMatches": 9,
+      "uniqueSourceReleases": 9,
+      "retainedReleases": 9,
+      "genreEligibleReleases": 9,
+      "genreEligibleButMissingFromExtraction": [],
+      "assessment": "Source and compact matches retained; fixed conservative rules route genre conflicts/weakness to review"
+    },
+    {
+      "artist": "Palms Trax",
+      "title": "Equation",
+      "matches": [
+        {
+          "releaseId": "4919827",
+          "releaseTitle": "Equation EP",
+          "artistId": 3467480,
+          "artist": "Palms Trax",
+          "title": "Equation",
+          "durationMs": 467000,
+          "tags": [
+            "Electronic",
+            "House"
+          ],
+          "formats": [
+            "12\"",
+            "33 ⅓ RPM",
+            "EP"
+          ]
+        },
+        {
+          "releaseId": "5122449",
+          "releaseTitle": "White Light 89",
+          "artistId": 3467480,
+          "artist": "Palms Trax",
+          "title": "Equation",
+          "durationMs": null,
+          "tags": [
+            "Electronic",
+            "Rock",
+            "Pop",
+            "New Wave",
+            "Synth-pop",
+            "Electro",
+            "House"
+          ],
+          "formats": [
+            "MP3",
+            "Mixed",
+            "Partially Unofficial"
+          ]
+        },
+        {
+          "releaseId": "5341120",
+          "releaseTitle": "Equation EP",
+          "artistId": 3467480,
+          "artist": "Palms Trax",
+          "title": "Equation",
+          "durationMs": 467000,
+          "tags": [
+            "Electronic",
+            "House"
+          ],
+          "formats": [
+            "12\"",
+            "33 ⅓ RPM",
+            "45 RPM"
+          ]
+        },
+        {
+          "releaseId": "5633765",
+          "releaseTitle": "VF Mix 03: Phonica Records",
+          "artistId": 3467480,
+          "artist": "Palms Trax",
+          "title": "Equation",
+          "durationMs": null,
+          "tags": [
+            "Electronic",
+            "Ambient",
+            "New Age",
+            "Experimental",
+            "Techno",
+            "House",
+            "Electro",
+            "Acid"
+          ],
+          "formats": [
+            "MP3",
+            "Mixed"
+          ]
+        },
+        {
+          "releaseId": "6199395",
+          "releaseTitle": "Doucemohrt Podcast 02",
+          "artistId": 3467480,
+          "artist": "Palms Trax",
+          "title": "Equation",
+          "durationMs": null,
+          "tags": [
+            "Electronic",
+            "House"
+          ],
+          "formats": [
+            "MP3",
+            "Mixed"
+          ]
+        },
+        {
+          "releaseId": "6642603",
+          "releaseTitle": "Mixmag Germany: Episode 007",
+          "artistId": 3467480,
+          "artist": "Palms Trax",
+          "title": "Equation",
+          "durationMs": null,
+          "tags": [
+            "Electronic",
+            "Tech House",
+            "House",
+            "Deep House",
+            "Techno"
+          ],
+          "formats": [
+            "MP3",
+            "Limited Edition",
+            "Mixed"
+          ]
+        },
+        {
+          "releaseId": "6732462",
+          "releaseTitle": "Equation EP ",
+          "artistId": 3467480,
+          "artist": "Palms Trax",
+          "title": "Equation",
+          "durationMs": null,
+          "tags": [
+            "Electronic",
+            "House"
+          ],
+          "formats": [
+            "12\"",
+            "33 ⅓ RPM",
+            "EP",
+            "Repress"
+          ]
+        },
+        {
+          "releaseId": "8992332",
+          "releaseTitle": "Equation EP",
+          "artistId": 3467480,
+          "artist": "Palms Trax",
+          "title": "Equation",
+          "durationMs": 467000,
+          "tags": [
+            "Electronic",
+            "House"
+          ],
+          "formats": [
+            "12\"",
+            "33 ⅓ RPM",
+            "EP",
+            "Repress"
+          ]
+        },
+        {
+          "releaseId": "9094546",
+          "releaseTitle": "Equation EP",
+          "artistId": 3467480,
+          "artist": "Palms Trax",
+          "title": "Equation",
+          "durationMs": 467000,
+          "tags": [
+            "Electronic",
+            "House"
+          ],
+          "formats": [
+            "12\"",
+            "33 ⅓ RPM",
+            "EP",
+            "Repress"
+          ]
+        },
+        {
+          "releaseId": "12618799",
+          "releaseTitle": "Equation",
+          "artistId": 3467480,
+          "artist": "Palms Trax",
+          "title": "Equation",
+          "durationMs": 469000,
+          "tags": [
+            "Electronic",
+            "House"
+          ],
+          "formats": [
+            "MP3",
+            "EP"
+          ]
+        },
+        {
+          "releaseId": "16792194",
+          "releaseTitle": "Lobster Deep Classics",
+          "artistId": 3467480,
+          "artist": "Palms Trax",
+          "title": "Equation",
+          "durationMs": 469000,
+          "tags": [
+            "Electronic",
+            "Deep House",
+            "Techno",
+            "Breaks",
+            "Jungle",
+            "Acid",
+            "Breakbeat"
+          ],
+          "formats": [
+            "MP3",
+            "Compilation"
+          ]
+        },
+        {
+          "releaseId": "21885955",
+          "releaseTitle": "Trax Classics (House)",
+          "artistId": 3467480,
+          "artist": "Palms Trax",
+          "title": "Equation",
+          "durationMs": null,
+          "tags": [
+            "Electronic",
+            "House",
+            "Deep House",
+            "Garage House"
+          ],
+          "formats": [
+            "LP",
+            "Compilation"
+          ]
+        },
+        {
+          "releaseId": "29483449",
+          "releaseTitle": "Система # 50",
+          "artistId": 3467480,
+          "artist": "Palms Trax",
+          "title": "Equation",
+          "durationMs": null,
+          "tags": [
+            "Electronic",
+            "House"
+          ],
+          "formats": [
+            "MP3",
+            "Mixed"
+          ]
+        },
+        {
+          "releaseId": "31471760",
+          "releaseTitle": "Equation EP",
+          "artistId": 3467480,
+          "artist": "Palms Trax",
+          "title": "Equation",
+          "durationMs": 467000,
+          "tags": [
+            "Electronic",
+            "House"
+          ],
+          "formats": [
+            "12\"",
+            "33 ⅓ RPM",
+            "EP",
+            "White Label"
+          ]
+        },
+        {
+          "releaseId": "31471793",
+          "releaseTitle": "Equation EP",
+          "artistId": 3467480,
+          "artist": "Palms Trax",
+          "title": "Equation",
+          "durationMs": 467000,
+          "tags": [
+            "Electronic",
+            "House"
+          ],
+          "formats": [
+            "12\"",
+            "33 ⅓ RPM",
+            "EP",
+            "Test Pressing"
+          ]
+        }
+      ],
+      "query": {
+        "artist": "Palms Trax",
+        "title": "Equation",
+        "durationMs": 467000
+      },
+      "result": {
+        "category": "DEFINITELY_HOUSE",
+        "confidence": 90,
+        "origin": "track",
+        "matchedGroups": 2,
+        "houseEvidence": true,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [
+          "Electronic",
+          "House"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 7,
+            "sourceReleaseObservations": 7,
+            "releaseIds": [
+              6199395,
+              6732462,
+              6642603
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 3,
+            "sourceReleaseObservations": 8,
+            "releaseIds": [
+              4919827,
+              12618799,
+              16792194
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.9333333333333333,
+          "coverage": 0.4166666666666667,
+          "sampleSize": 72,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": false,
+          "priority": null,
+          "reason": "Automatic decision; available for inspection"
+        },
+        "explanation": [
+          "2 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "fullArchiveExactMatches": 15,
+      "uniqueSourceReleases": 15,
+      "retainedReleases": 15,
+      "genreEligibleReleases": 15,
+      "genreEligibleButMissingFromExtraction": [],
+      "assessment": "Useful source evidence produces an automatic fixed-rule decision"
+    },
+    {
+      "artist": "Barry Can't Swim",
+      "title": "Sunsleeper",
+      "matches": [
+        {
+          "releaseId": "28641277",
+          "releaseTitle": "When Will We Land?",
+          "artistId": 10080187,
+          "artist": "Barry Can't Swim",
+          "title": "Sunsleeper",
+          "durationMs": 222000,
+          "tags": [
+            "Electronic",
+            "House",
+            "Breakbeat"
+          ],
+          "formats": [
+            "LP",
+            "Album"
+          ]
+        },
+        {
+          "releaseId": "28650076",
+          "releaseTitle": "When Will We Land?",
+          "artistId": 10080187,
+          "artist": "Barry Can't Swim",
+          "title": "Sunsleeper",
+          "durationMs": null,
+          "tags": [
+            "Electronic",
+            "Electro House"
+          ],
+          "formats": [
+            "LP",
+            "Album",
+            "Limited Edition",
+            "Numbered",
+            "Stereo"
+          ]
+        },
+        {
+          "releaseId": "28650670",
+          "releaseTitle": "When Will We Land?",
+          "artistId": 10080187,
+          "artist": "Barry Can't Swim",
+          "title": "Sunsleeper",
+          "durationMs": null,
+          "tags": [
+            "Electronic",
+            "Electro House"
+          ],
+          "formats": [
+            "LP",
+            "Album",
+            "Limited Edition",
+            "Stereo"
+          ]
+        },
+        {
+          "releaseId": "28706878",
+          "releaseTitle": "When Will We Land?",
+          "artistId": 10080187,
+          "artist": "Barry Can't Swim",
+          "title": "Sunsleeper",
+          "durationMs": 222000,
+          "tags": [
+            "Electronic",
+            "House",
+            "Breakbeat"
+          ],
+          "formats": [
+            "LP",
+            "Album",
+            "Limited Edition"
+          ]
+        },
+        {
+          "releaseId": "28720795",
+          "releaseTitle": "When Will We Land?",
+          "artistId": 10080187,
+          "artist": "Barry Can't Swim",
+          "title": "Sunsleeper",
+          "durationMs": 222000,
+          "tags": [
+            "Electronic",
+            "Ambient House",
+            "Electro House"
+          ],
+          "formats": [
+            "LP",
+            "Album",
+            "Limited Edition",
+            "Picture Disc",
+            "Special Edition"
+          ]
+        },
+        {
+          "releaseId": "28725091",
+          "releaseTitle": "When Will We Land?",
+          "artistId": 10080187,
+          "artist": "Barry Can't Swim",
+          "title": "Sunsleeper",
+          "durationMs": null,
+          "tags": [
+            "Electronic",
+            "Electro House"
+          ],
+          "formats": [
+            "Album",
+            "Limited Edition"
+          ]
+        },
+        {
+          "releaseId": "29209918",
+          "releaseTitle": "When Will We Land?",
+          "artistId": 10080187,
+          "artist": "Barry Can't Swim",
+          "title": "Sunsleeper",
+          "durationMs": 222000,
+          "tags": [
+            "Electronic",
+            "House",
+            "Breakbeat"
+          ],
+          "formats": [
+            "Album"
+          ]
+        },
+        {
+          "releaseId": "33103629",
+          "releaseTitle": "Kimbara",
+          "artistId": 10080187,
+          "artist": "Barry Can't Swim",
+          "title": "Sunsleeper",
+          "durationMs": 222000,
+          "tags": [
+            "Electronic",
+            "House"
+          ],
+          "formats": [
+            "FLAC",
+            "Single"
+          ]
+        }
+      ],
+      "query": {
+        "artist": "Barry Can't Swim",
+        "title": "Sunsleeper",
+        "durationMs": 222000
+      },
+      "result": {
+        "category": "DEFINITELY_HOUSE",
+        "confidence": 90,
+        "origin": "track",
+        "matchedGroups": 2,
+        "houseEvidence": true,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [
+          "Electronic",
+          "Electro House",
+          "House",
+          "Ambient House"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 3,
+            "releaseIds": [
+              28650076
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 2,
+            "sourceReleaseObservations": 5,
+            "releaseIds": [
+              33103629,
+              28641277
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.9534883720930233,
+          "coverage": 0.8113207547169812,
+          "sampleSize": 53,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": false,
+          "priority": null,
+          "reason": "Automatic decision; available for inspection"
+        },
+        "explanation": [
+          "2 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      },
+      "fullArchiveExactMatches": 8,
+      "uniqueSourceReleases": 8,
+      "retainedReleases": 8,
+      "genreEligibleReleases": 8,
+      "genreEligibleButMissingFromExtraction": [],
+      "assessment": "Useful source evidence produces an automatic fixed-rule decision"
+    }
+  ]
+}

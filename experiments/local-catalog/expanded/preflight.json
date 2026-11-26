@@ -1,0 +1,10 @@
+{
+  "freeBytes": 597721800704,
+  "existingArtifactBytes": 14098330982,
+  "limits": {
+    "totalArtifactBytes": 30000000000,
+    "allSqliteBytes": 8589934592
+  },
+  "peakBudgetEstimate": "Existing ~14.1 GB plus at most ~5.85 GB remaining SQLite allocation, with up to ~10 GB remaining for guarded temporary files: <=30 GB. Expected final size unmeasured; pilot scaling is provisional and full passes stop rather than exceed caps.",
+  "sourceArchive": "/Users/shreyroy/Desktop/projects/housify/experiments/local-catalog/discogs/artifacts/discogs_20261101_releases.xml.gz"
+}

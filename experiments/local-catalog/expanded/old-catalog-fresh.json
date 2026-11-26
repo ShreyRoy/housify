@@ -1,0 +1,1375 @@
+{
+  "purpose": "Frozen-policy baseline on fresh independent cases before expanded-index evaluation. No overrides.",
+  "rows": [
+    {
+      "query": {
+        "id": "expanded-01",
+        "group": "niche",
+        "artist": "Leon Vynehall",
+        "title": "Butterflies",
+        "gold": "house",
+        "reference": "https://ra.co/reviews/15141",
+        "note": "Recording review explicitly calls the named track house."
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": null,
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-02",
+        "group": "niche",
+        "artist": "Sofia Kourtesis",
+        "title": "La Perla",
+        "gold": "house",
+        "reference": "https://pitchfork.com/reviews/tracks/sofia-kourtesis-la-perla/",
+        "note": "Track review explicitly deep house."
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": null,
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-03",
+        "group": "multi-genre",
+        "artist": "DJ Koze",
+        "title": "Pick Up",
+        "gold": "house",
+        "reference": "https://ra.co/reviews/22464",
+        "note": "Album review specifically describes Pick Up as disco house, not the whole album."
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": null,
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-04",
+        "group": "versions",
+        "artist": "DJ Koze",
+        "title": "Pick Up (12\" Extended Disco Version)",
+        "gold": null,
+        "reference": "https://djkoze.bandcamp.com/track/pick-up-12-extended-disco-version",
+        "note": "Unadjudicated exact-version boundary: label calls it filter disco; https://www.traxsource.com/track/5208180/pick-up-12-extended-disco-version lists Nu Disco / Indie Dance. Original disco-house review does not settle extended-version gold."
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": null,
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-05",
+        "group": "emerging",
+        "artist": "Swimming Paul",
+        "title": "Fading",
+        "gold": "house",
+        "reference": "https://earmilk.com/2023/05/23/swimming-paul-shares-an-irrepressible-and-emotive-house-anthem-fading/",
+        "note": "Recording-specific house description and tech-house rhythm. Emerging-styled artist case, not proof of a distinct source taxonomy tag."
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": null,
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-06",
+        "group": "emerging",
+        "artist": "its murph",
+        "title": "Food For The Soul",
+        "gold": null,
+        "reference": "https://soundcloud.com/its-murph-987074444/foodforthesoul",
+        "note": "Identity only; independent track-specific genre adjudication incomplete."
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": null,
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-07",
+        "group": "recent",
+        "artist": "Chris Lake",
+        "title": "Savana",
+        "gold": "house",
+        "reference": "https://edm.com/music-releases/chris-lake-savana/",
+        "note": "2025 recording explicitly characterized as house."
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 55,
+        "origin": "artist",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 0.8181818181818182,
+          "coverage": 0.8461538461538461,
+          "sampleSize": 13,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 2,
+          "reason": "Unrecognized recording from a predominantly house artist"
+        },
+        "explanation": [
+          "Artist affinity prioritizes review; it cannot prove this recording is house.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-08",
+        "group": "recent",
+        "artist": "Mau P",
+        "title": "MERTHER (Extended Mix)",
+        "gold": "house",
+        "reference": "https://www.beatport.com/track/merther/19589648",
+        "note": "2024 exact extended version retailer listing Tech House. Retailer taxonomy is fallible, independent of evaluated Discogs dump."
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 1,
+          "coverage": 1,
+          "sampleSize": 1,
+          "kind": "electronic"
+        },
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-09",
+        "group": "recent",
+        "artist": "Sonny Fodera",
+        "title": "Somedays",
+        "gold": "house",
+        "reference": "https://earmilk.com/2024/08/02/sonny-fodera-shares-anthemic-sun-drenched-anthem-somedays/",
+        "note": "2024 house single review; original collaboration with Jazzy and D.O.D."
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 1,
+          "coverage": 1,
+          "sampleSize": 1,
+          "kind": "electronic"
+        },
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-10",
+        "group": "non-house-artists",
+        "artist": "Skepta",
+        "title": "Touching My Body",
+        "gold": "house",
+        "reference": "https://www.qobuz.com/gb-en/album/touching-my-body-down-shovel-skepta-jammer/tut9oizmzf3da",
+        "note": "House two-track release; named track corroborated in https://mixmag.net/feature/skepta-jammer-mas-tiempo-interview-house-tech-dj-producer-mix-the-lab-bbk . Collaboration with Jammer/Etta Bond."
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 35,
+        "origin": "artist",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 0.5,
+          "coverage": 1,
+          "sampleSize": 4,
+          "kind": "mixed_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 3,
+          "reason": "Mixed discography with meaningful house support"
+        },
+        "explanation": [
+          "Artist affinity prioritizes review; it cannot prove this recording is house.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-11",
+        "group": "non-house-artists",
+        "artist": "Beyoncé",
+        "title": "Break My Soul",
+        "gold": "house",
+        "reference": "https://pitchfork.com/reviews/tracks/beyonce-break-my-soul/",
+        "note": "Recording-specific vocal house description."
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 35,
+        "origin": "artist",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 0.375,
+          "coverage": 0.6666666666666666,
+          "sampleSize": 12,
+          "kind": "mixed_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 3,
+          "reason": "Mixed discography with meaningful house support"
+        },
+        "explanation": [
+          "Artist affinity prioritizes review; it cannot prove this recording is house.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-12",
+        "group": "non-house-artists",
+        "artist": "Madonna",
+        "title": "Vogue",
+        "gold": "house",
+        "reference": "https://en.wikipedia.org/wiki/Vogue_(song)",
+        "note": "Recording-specific house description; genre remains a human annotation, not audio ground truth."
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 55,
+        "origin": "artist",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 0.9,
+          "coverage": 0.43478260869565216,
+          "sampleSize": 23,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 2,
+          "reason": "Unrecognized recording from a predominantly house artist"
+        },
+        "explanation": [
+          "Artist affinity prioritizes review; it cannot prove this recording is house.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-13",
+        "group": "multi-genre",
+        "artist": "Fred again..",
+        "title": "adore u",
+        "gold": "house",
+        "reference": "https://en.wikipedia.org/wiki/Adore_U",
+        "note": "Track-specific house description; also corroborated by pre-USB deep-house discussion https://pitchfork.com/reviews/albums/fred-again-usb002/ ."
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 65,
+        "origin": "track",
+        "matchedGroups": 3,
+        "houseEvidence": true,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [
+          "Electronic",
+          "House",
+          "Progressive House",
+          "Ambient House"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 5,
+            "sourceReleaseObservations": 8,
+            "releaseIds": [
+              "discogs:release:30395702",
+              "discogs:release:28982464",
+              "discogs:release:29946724"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:38637009"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 3,
+            "sourceReleaseObservations": 3,
+            "releaseIds": [
+              "discogs:release:27951114",
+              "discogs:release:28125790",
+              "discogs:release:35070443"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.9068627450980392,
+          "coverage": 0.9066666666666666,
+          "sampleSize": 225,
+          "kind": "predominantly_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 3,
+          "reason": "Mixed discography with meaningful house support"
+        },
+        "explanation": [
+          "3 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-14",
+        "group": "multi-genre",
+        "artist": "Four Tet",
+        "title": "Baby",
+        "gold": "house",
+        "reference": "https://ra.co/reviews/24726?comments=1",
+        "note": "Named single review House; independent radio track review https://kzuu.org/2020/02/05/four-tet-baby/ ."
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 0,
+          "coverage": 0,
+          "sampleSize": 3,
+          "kind": "predominantly_non_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-15",
+        "group": "versions",
+        "artist": "Sofia Kourtesis",
+        "title": "La Perla (Tourist Remix)",
+        "gold": null,
+        "reference": "https://zero.eu/en/artista/sofia-kourtesis/",
+        "note": "Version identity only; original genre never supplies remix gold."
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": null,
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-16",
+        "group": "versions",
+        "artist": "Beyoncé",
+        "title": "Break My Soul (Honey Dijon Remix)",
+        "gold": null,
+        "reference": "https://edm.com/music-releases/beyonce-honey-dijon-will-i-am-break-my-soul-remix-ep/",
+        "note": "Exact remix described as jungle/bounce; house roots of remixer insufficient to resolve multi-genre boundary."
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 35,
+        "origin": "artist",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": {
+          "affinity": 0.375,
+          "coverage": 0.6666666666666666,
+          "sampleSize": 12,
+          "kind": "mixed_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 3,
+          "reason": "Mixed discography with meaningful house support"
+        },
+        "explanation": [
+          "Artist affinity prioritizes review; it cannot prove this recording is house.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-17",
+        "group": "adjacent",
+        "artist": "DJ HEARTSTRING",
+        "title": "Will You Remember Me When I'm Gone?",
+        "gold": "non_house",
+        "reference": "https://www.traxsource.com/track/9579273/will-you-remember-me-when-im-gone",
+        "note": "Exact original version retailer Techno label; release description also calls its sound hyper-trance. Operational adjacent/non-house label, not a claim of zero house influence."
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": null,
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-18",
+        "group": "adjacent",
+        "artist": "Sammy Virji",
+        "title": "If U Need It",
+        "gold": null,
+        "reference": "https://musicsweek.com/detail/4545/Sammy-Virji-on-his-process%3A-%E2%80%9CIt%E2%80%99s-all-about-mucking-around-and-discovering-ideas%E2%80%9D",
+        "note": "Conflicting genre accounts: artist explicitly rejects the common UK garage label. Do not turn a retailer label into strict gold."
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": null,
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-19",
+        "group": "unrelated",
+        "artist": "AC/DC",
+        "title": "Thunderstruck",
+        "gold": "non_house",
+        "reference": "https://en.wikipedia.org/wiki/Thunderstruck_(song)",
+        "note": "Original hard-rock studio single, not a remix."
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 55,
+        "origin": "track",
+        "matchedGroups": 19,
+        "houseEvidence": true,
+        "nonHouseEvidence": true,
+        "conflictingEvidence": true,
+        "tags": [
+          "Rock",
+          "Hard Rock",
+          "Heavy Metal",
+          "Blues",
+          "Pop",
+          "Electronic",
+          "Synth-pop",
+          "House",
+          "Techno",
+          "Garage House",
+          "Hip Hop",
+          "Disco"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 295,
+            "sourceReleaseObservations": 673,
+            "releaseIds": [
+              "discogs:release:7817393",
+              "discogs:release:9387686",
+              "discogs:release:3657016"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 2,
+            "releaseIds": [
+              "discogs:release:12232917"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:33907380"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:32096475"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:3868454"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:1999968"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 2,
+            "sourceReleaseObservations": 2,
+            "releaseIds": [
+              "discogs:release:32180499",
+              "discogs:release:5661104"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 52,
+            "sourceReleaseObservations": 338,
+            "releaseIds": [
+              "discogs:release:11860791",
+              "discogs:release:11003084",
+              "discogs:release:8473875"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 9,
+            "sourceReleaseObservations": 11,
+            "releaseIds": [
+              "discogs:release:19362877",
+              "discogs:release:13160273",
+              "discogs:release:19867039"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 6,
+            "sourceReleaseObservations": 7,
+            "releaseIds": [
+              "discogs:release:16657494",
+              "discogs:release:12669331",
+              "discogs:release:1904171"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 12,
+            "sourceReleaseObservations": 26,
+            "releaseIds": [
+              "discogs:release:23643545",
+              "discogs:release:6345182",
+              "discogs:release:31066925"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 6,
+            "sourceReleaseObservations": 60,
+            "releaseIds": [
+              "discogs:release:12406155",
+              "discogs:release:1904171",
+              "discogs:release:1466899"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 5,
+            "sourceReleaseObservations": 6,
+            "releaseIds": [
+              "discogs:release:1710953",
+              "discogs:release:4367665",
+              "discogs:release:2473288"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 10,
+            "sourceReleaseObservations": 10,
+            "releaseIds": [
+              "discogs:release:3688885",
+              "discogs:release:6673147",
+              "discogs:release:12337297"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 5,
+            "sourceReleaseObservations": 7,
+            "releaseIds": [
+              "discogs:release:32107557",
+              "discogs:release:16183929",
+              "discogs:release:5258600"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:3566382"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:13441257"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 11,
+            "sourceReleaseObservations": 183,
+            "releaseIds": [
+              "discogs:release:28573924",
+              "discogs:release:6345182",
+              "discogs:release:3669896"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 2,
+            "sourceReleaseObservations": 2,
+            "releaseIds": [
+              "discogs:release:4830859",
+              "discogs:release:2043222"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.008502772643253234,
+          "coverage": 0.7457954232147781,
+          "sampleSize": 3627,
+          "kind": "predominantly_non_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 1,
+          "reason": "Conflicting track-specific house evidence"
+        },
+        "explanation": [
+          "19 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "House and non-house evidence conflict; all ambiguous evidence remains reviewable.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-20",
+        "group": "unrelated",
+        "artist": "Blur",
+        "title": "Song 2",
+        "gold": "non_house",
+        "reference": "https://en.wikipedia.org/wiki/Song_2",
+        "note": "Original alternative-rock single."
+      },
+      "result": {
+        "category": "UNKNOWN",
+        "confidence": 0,
+        "origin": "none",
+        "matchedGroups": 0,
+        "houseEvidence": false,
+        "nonHouseEvidence": false,
+        "conflictingEvidence": false,
+        "tags": [],
+        "provenance": [],
+        "artist": null,
+        "review": {
+          "required": true,
+          "priority": 5,
+          "reason": "Unknown recording; still fully accessible for review"
+        },
+        "explanation": [
+          "Insufficient compatible track evidence. Missing metadata never causes exclusion.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-21",
+        "group": "unrelated",
+        "artist": "Adele",
+        "title": "Hello",
+        "gold": "non_house",
+        "reference": "https://en.wikipedia.org/wiki/Hello_(Adele_song)",
+        "note": "Original piano soul ballad, not electronic remixes."
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 65,
+        "origin": "track",
+        "matchedGroups": 6,
+        "houseEvidence": false,
+        "nonHouseEvidence": true,
+        "conflictingEvidence": false,
+        "tags": [
+          "Rock",
+          "Pop",
+          "Pop Rock",
+          "Electronic",
+          "Blues",
+          "Jazz",
+          "Hip Hop",
+          "Downtempo",
+          "Soul"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 20,
+            "sourceReleaseObservations": 37,
+            "releaseIds": [
+              "discogs:release:8098537",
+              "discogs:release:10074874",
+              "discogs:release:35393326"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 4,
+            "sourceReleaseObservations": 11,
+            "releaseIds": [
+              "discogs:release:38432712",
+              "discogs:release:7923295",
+              "discogs:release:38605827"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 7,
+            "sourceReleaseObservations": 41,
+            "releaseIds": [
+              "discogs:release:7669759",
+              "discogs:release:25598377",
+              "discogs:release:20693254"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 5,
+            "sourceReleaseObservations": 5,
+            "releaseIds": [
+              "discogs:release:13958253",
+              "discogs:release:8155619",
+              "discogs:release:11283913"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 2,
+            "sourceReleaseObservations": 3,
+            "releaseIds": [
+              "discogs:release:10320255",
+              "discogs:release:11527065"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:9117833"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.33547008547008544,
+          "coverage": 0.5611510791366906,
+          "sampleSize": 834,
+          "kind": "mixed_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 3,
+          "reason": "Mixed discography with meaningful house support"
+        },
+        "explanation": [
+          "6 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    },
+    {
+      "query": {
+        "id": "expanded-22",
+        "group": "unrelated",
+        "artist": "Eminem",
+        "title": "Stan",
+        "gold": "non_house",
+        "reference": "https://en.wikipedia.org/wiki/Stan_(song)",
+        "note": "Original hip-hop track."
+      },
+      "result": {
+        "category": "POSSIBLY_HOUSE",
+        "confidence": 55,
+        "origin": "track",
+        "matchedGroups": 23,
+        "houseEvidence": true,
+        "nonHouseEvidence": true,
+        "conflictingEvidence": true,
+        "tags": [
+          "Hip Hop",
+          "Electronic",
+          "Techno",
+          "Hard Techno",
+          "Breakbeat",
+          "Rock",
+          "Trance",
+          "Alternative Rock",
+          "Pop",
+          "Pop Rock",
+          "Hard House",
+          "Downtempo"
+        ],
+        "provenance": [
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 191,
+            "sourceReleaseObservations": 367,
+            "releaseIds": [
+              "discogs:release:13699533",
+              "discogs:release:11540855",
+              "discogs:release:4460499"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 2,
+            "sourceReleaseObservations": 2,
+            "releaseIds": [
+              "discogs:release:37129911",
+              "discogs:release:11782194"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:5296236"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:1967390"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:8541081"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 2,
+            "sourceReleaseObservations": 9,
+            "releaseIds": [
+              "discogs:release:2252988",
+              "discogs:release:13283897"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:8030552"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:7973657"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:23773421"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:7940308"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 23,
+            "sourceReleaseObservations": 23,
+            "releaseIds": [
+              "discogs:release:5700381",
+              "discogs:release:15279924",
+              "discogs:release:3104456"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 2,
+            "sourceReleaseObservations": 2,
+            "releaseIds": [
+              "discogs:release:3025529",
+              "discogs:release:12534262"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:14818863"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:2241532"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 6,
+            "sourceReleaseObservations": 6,
+            "releaseIds": [
+              "discogs:release:7484127",
+              "discogs:release:7101349",
+              "discogs:release:6245853"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:12745194"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 61,
+            "sourceReleaseObservations": 319,
+            "releaseIds": [
+              "discogs:release:3599184",
+              "discogs:release:4582197",
+              "discogs:release:5074830"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 4,
+            "sourceReleaseObservations": 5,
+            "releaseIds": [
+              "discogs:release:15513422",
+              "discogs:release:12669266",
+              "discogs:release:9615234"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:15967975"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 1,
+            "releaseIds": [
+              "discogs:release:13504645"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 2,
+            "releaseIds": [
+              "discogs:release:14954644"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 1,
+            "sourceReleaseObservations": 7,
+            "releaseIds": [
+              "discogs:release:10697487"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          },
+          {
+            "source": "Discogs bulk metadata",
+            "scope": "release context",
+            "logicalReleaseUnits": 2,
+            "sourceReleaseObservations": 2,
+            "releaseIds": [
+              "discogs:release:30117113",
+              "discogs:release:9189249"
+            ],
+            "deduplication": "Logical release title + artist, not pressing count; not proof of independent recording identity"
+          }
+        ],
+        "artist": {
+          "affinity": 0.03235800344234079,
+          "coverage": 0.6212574850299402,
+          "sampleSize": 4676,
+          "kind": "predominantly_non_house"
+        },
+        "review": {
+          "required": true,
+          "priority": 1,
+          "reason": "Conflicting track-specific house evidence"
+        },
+        "explanation": [
+          "23 compatible precomputed version/duration groups; pressing identity is unnecessary for genre consensus.",
+          "House and non-house evidence conflict; all ambiguous evidence remains reviewable.",
+          "Scores are heuristic evidence strengths, not calibrated probabilities."
+        ]
+      }
+    }
+  ]
+}

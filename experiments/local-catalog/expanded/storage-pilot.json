@@ -1,0 +1,17 @@
+{
+  "sourceRecordingsAtSnapshot": 4567715,
+  "sampleRecordings": 44015,
+  "sourceProgressAtSnapshot": [
+    [
+      1,
+      1430000,
+      941877,
+      360.03776820842177,
+      "running"
+    ]
+  ],
+  "sampleSourceBytes": 7282688,
+  "sampleIndexBytes": 12046336,
+  "prefixIndexEstimateBytes": 1250124494.8821993,
+  "limitations": "One-percent artist-ID modulo sample of the current chronological genre-prefix import. Artist IDs and release ordering are not random. Extrapolation excludes second-pass evidence and is a rough storage warning only."
+}

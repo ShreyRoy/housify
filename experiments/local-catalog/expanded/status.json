@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "processGroupId": 33717,
+  "sourceCatalogComplete": true,
+  "sourceCounts": {
+    "releases": 12731321,
+    "recordings": 46142612,
+    "release_tracks": 112668721,
+    "artists": 1878265,
+    "artist_aliases": 1937271,
+    "relevant_artists": 1097876,
+    "track_credits": 34978867,
+    "genres": 768
+  },
+  "sourceDatabaseBytes": 10061942784,
+  "completedConsensusPartitions": 32,
+  "partitions": 32,
+  "lookupDurationRowsInCompletedPartitions": 19165876,
+  "indexPublished": true,
+  "storage": {
+    "exitCode": 0,
+    "reason": null,
+    "reattachedProcessGroup": 33717,
+    "peakArtifactBytesEstimate": 34370310978,
+    "peakAllSqliteBytesEstimate": 23007570489,
+    "baselineTempReserveBytes": 888143872,
+    "samples": 789,
+    "method": "Visible files plus positive unexplained filesystem free-space delta and a conservative handoff reserve. Limits refresh only from the explicit user-approval record. Concurrent disk activity can overestimate unlinked SQLite scratch; this is not exact process-attributed disk usage."
+  },
+  "accuracyAndQueryTimings": "Completed; see results.json, probe-results.json and REPORT.md",
+  "resumedAt": "2026-11-26T16:53:53.852898+00:00",
+  "approvedAggregateSqliteBytes": 25769803776,
+  "finalIndexBytes": 8922329088,
+  "lookupDurationRows": 23634551
+}

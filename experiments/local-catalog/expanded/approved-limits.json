@@ -1,0 +1,11 @@
+{
+  "approvedAt": "2026-11-26T16:53:24.927667+00:00",
+  "source": "User explicitly approved 24 GiB aggregate SQLite; keep 45 GB peak in this conversation",
+  "peakArtifactBytes": 45000000000,
+  "aggregateSqliteBytes": 25769803776,
+  "preserveOldArtifacts": true,
+  "previousApproval": {
+    "approvedAt": "2026-11-24T20:59:06.525195+00:00",
+    "aggregateSqliteBytes": 21474836480
+  }
+}

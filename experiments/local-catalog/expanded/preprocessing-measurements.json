@@ -1,0 +1,22 @@
+{
+  "rawBuildElapsedSeconds": 150436.183151291,
+  "recordedPausedSeconds": 146511.929128,
+  "estimatedBuildSecondsExcludingRecordedPauses": 3924.254023291025,
+  "limitation": "Approximate wall time subtracting recorded SIGSTOP intervals; includes scheduling and I/O. Resume timestamp recorded shortly after signal. Not CPU time.",
+  "storage": {
+    "exitCode": 0,
+    "reason": null,
+    "reattachedProcessGroup": 33717,
+    "peakArtifactBytesEstimate": 34370310978,
+    "peakAllSqliteBytesEstimate": 23007570489,
+    "baselineTempReserveBytes": 888143872,
+    "samples": 789,
+    "method": "Visible files plus positive unexplained filesystem free-space delta and a conservative handoff reserve. Limits refresh only from the explicit user-approval record. Concurrent disk activity can overestimate unlinked SQLite scratch; this is not exact process-attributed disk usage."
+  },
+  "memory": {
+    "parentPeakRssBytes": 1504706560,
+    "workerPeakRssBytes": 2048638976,
+    "peakRssUpperBoundBytes": 3553345536,
+    "memoryMethod": "Observed parent peak plus largest sequential worker peak is a conservative process-tree upper bound, not an exact simultaneous RSS measurement."
+  }
+}
